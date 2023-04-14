@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /images/bio2/*
+Disallow: /images/bio/*

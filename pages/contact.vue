@@ -60,7 +60,7 @@ useHead({
 })
 
 definePageMeta({
-  activeMenuLink: 'contact'
+  activeMenuLink: '/contact'
 })
 </script>
 

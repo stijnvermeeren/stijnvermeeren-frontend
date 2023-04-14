@@ -25,7 +25,7 @@
   <p>I've implemented an <nuxt-link to="https://concept.stijnvermeeren.be">online version of the game Concept</nuxt-link> (<nuxt-link to="https://www.rprod.com/en/games/concept">original by Repos Productions</nuxt-link>). Source code and technical details can be found in the <nuxt-link to="https://github.com/stijnvermeeren/concept">Github project</nuxt-link>.</p>
 
   <h3>Mathematics</h3>
-  <p>In 2013, I obtained a PhD in Mathematical Logic from the University of Leeds. My full thesis was titled "<nuxt-link to="download/mathematics/Vermeeren_S_Mathematics_PhD_2013.pdf">Notions and applications of algorithmic randomness</nuxt-link>" (pdf, 801 kB).</p>
+  <p>In 2013, I obtained a PhD in Mathematical Logic from the University of Leeds. My full thesis was titled "<a href="download/mathematics/Vermeeren_S_Mathematics_PhD_2013.pdf">Notions and applications of algorithmic randomness</a>" (pdf, 801 kB).</p>
   <ul>
     <li><nuxt-link to="mathematics">More mathematics</nuxt-link></li>
     <li><nuxt-link to="wiskunde">Meer wiskunde</nuxt-link></li>
@@ -38,6 +38,6 @@
   })
 
   definePageMeta({
-    activeMenuLink: 'projects'
+    activeMenuLink: '/projects'
   })
 </script>

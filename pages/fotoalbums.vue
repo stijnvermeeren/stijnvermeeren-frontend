@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-const { data: albums} = await useApiFetch('/foto/api');
+const { data: albums } = await useApiFetch('/foto/api');
 
 useHead({
   title: 'Fotoalbums'

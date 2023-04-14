@@ -5,4 +5,14 @@ export default defineNuxtConfig({
             apiBase: 'http://localhost:8080', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
         }
     },
+    hooks: {
+        'pages:extend' (pages) {
+            // add a route
+            pages.push({
+                name: 'blogExtended',
+                path: '/blog/:slug(.*)',
+                file: '~/pages/blog/[slug].vue'
+            });
+        }
+    }
 })

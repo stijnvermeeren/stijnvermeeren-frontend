@@ -21,6 +21,6 @@ useHead({
 })
 
 definePageMeta({
-  activeMenuLink: 'info'
+  activeMenuLink: '/info'
 })
 </script>

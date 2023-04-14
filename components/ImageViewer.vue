@@ -24,7 +24,6 @@ onMounted(() => {
 });
 
 function zoomIn() {
-  console.log(viewer)
   viewer.zoom(viewer._state.zoomValue * 1.25)
 }
 

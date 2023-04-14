@@ -19,7 +19,9 @@
 
   <div class="container content">
     <div class="row">
-      <slot />
+      <div class="col">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
@@ -40,8 +42,8 @@
     font-family: 'Source Sans Pro', sans-serif !important;
   }
 
-  a {
-    color: inherit !important;
+  div.content a {
+    color: black;
     text-decoration: underline;
     transition: 0.5s all ease !important;
   }
@@ -199,42 +201,9 @@
     margin: 0 0.3em 0 0;
   }
 
-
-  div.blogPost blockquote, blockquote.citaat {
-    margin-left: 3em;
-    margin-right: 3em;
-    font-size: 90%;
-  }
-  div.blogPost blockquote p, blockquote.citaat p {
-    text-indent: 1em;
-    margin: 0.2em 0;
-  }
-  div.blogPost blockquote.poezie p {
-    text-indent: 0;
-    margin: 0.2em 0;
-  }
-  div.blogPost blockquote p span.ellips {
-    color: #666;
-    font-size:  70%;
-  }
-  div.blogPost blockquote p.source {
-    text-align: right;
-    font-style: italic;
-    margin-right: 3em;
-  }
-  div.blogPost p.youtube {
-    text-align: center;
-  }
-  div.blogPost p.blogfoto {
-    text-align: center;
-  }
-
   p.biofoto {
     margin: 0.7em 0;
     text-align: center;
-  }
-  p.bio_inhoud {
-    margin: -.5em 0 1.3em 3em;
   }
 
   div.profiles ul li {

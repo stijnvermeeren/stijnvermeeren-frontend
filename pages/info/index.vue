@@ -12,7 +12,7 @@
 
   <p>I am currently on a sabbatical until April 2023, travelling Europe and Latin America.</p>
 
-  <p>You can <nuxt-link to="/files/cv/CV-Stijn_Vermeeren.pdf">view/download my CV as a PDF file</nuxt-link>.</p>
+  <p>You can <a href="/files/cv/CV-Stijn_Vermeeren.pdf">view/download my CV as a PDF file</a>.</p>
 
   <h3>Mathematician</h3>
 
@@ -67,6 +67,6 @@ useHead({
 })
 
 definePageMeta({
-  activeMenuLink: 'info'
+  activeMenuLink: '/info'
 })
 </script>

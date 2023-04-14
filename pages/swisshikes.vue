@@ -20,8 +20,8 @@ useHead({
 })
 
 definePageMeta({
-  activeMenuLink: 'projects'
+  activeMenuLink: '/projects'
 })
 
-const { data } = useApiFetch('/projects/swisshikes-api');
+const { data } = await useApiFetch('/projects/swisshikes-api');
 </script>

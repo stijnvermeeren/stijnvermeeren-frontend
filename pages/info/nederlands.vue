@@ -4,7 +4,7 @@
   <h2>Over Stijn</h2>
 
   <p>Mijn naam is Stijn Vermeeren. Ik ben <stijn-age /> jaar oud.</p>
-  <p>Ik ben opgegroeid in <nuxt-link to="http://maps.google.com/maps?f=q&hl=en&geocode=&q=Aarschot,+Belgium&ie=UTF8&ll=51.018506,4.831924&spn=0.165435,0.466919&z=11&om=1">Aarschot</nuxt-link>, Vlaams-Brabant. Sinds 2013 woon ik in Zürich, Zwitserland. In mijn <nuxt-link to="bio">ludieke biografie</nuxt-link> kan je meer over mij lezen.</p>
+  <p>Ik ben opgegroeid in <nuxt-link to="http://maps.google.com/maps?f=q&hl=en&geocode=&q=Aarschot,+Belgium&ie=UTF8&ll=51.018506,4.831924&spn=0.165435,0.466919&z=11&om=1">Aarschot</nuxt-link>, Vlaams-Brabant. Sinds 2013 woon ik in Zürich, Zwitserland. In mijn <nuxt-link to="/bio">ludieke biografie</nuxt-link> kan je meer over mij lezen.</p>
 
   <h3>Data scientist en softwareontwikkelaar</h3>
 
@@ -62,6 +62,6 @@ useHead({
 })
 
 definePageMeta({
-  activeMenuLink: 'info'
+  activeMenuLink: '/info'
 })
 </script>
