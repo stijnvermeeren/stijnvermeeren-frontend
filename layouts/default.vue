@@ -18,7 +18,9 @@
   </div>
 
   <div class="container content">
-    <slot />
+    <div class="row">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -299,86 +301,6 @@
     font-size: 70%;
     text-align: center;
   }
-
-
-  div.gallery figure {
-    float: left;
-    list-style-type: none;
-    width: 165px;
-    height: 100px;
-    margin: .5em 0 0.5em 0;
-    text-align: center;
-  }
-
-  div.gallery figure figcaption {
-    display: none;
-  }
-
-  div.caption {
-    margin: 0.4em 0;
-  }
-
-  div.caption a {
-    color: #8888ff;
-  }
-  div.caption a.extern {
-    color: #8888ff;
-  }
-
-  div.caption div.title {
-    font-weight: bold;
-    margin-bottom: 0.3em;
-  }
-
-  div.caption div.description {
-    font-size: 95%;
-    margin-bottom: 0.3em;
-  }
-
-  div.caption div.location {
-    font-size: 85%;
-  }
-  div.caption div.time {
-    font-size: 85%;
-    margin-bottom: 0.3em;
-  }
-
-  div.panorama img {
-    vertical-align: middle;
-    margin: 0 1em;
-  }
-  div.panorama a {
-    border: 1px solid darkgray;
-    border-radius: 3px;
-    text-decoration: none;
-    display: block;
-    line-height: 40px;
-    width: 30em;
-    padding: 0.1em 0;
-    margin: 0 auto 1.5em auto;
-  }
-  div.panorama a:hover {
-    background-color: #181818;
-  }
-
-  div#imageviewer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-  }
-  div#imageviewer-zoom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 100;
-  }
-  div#imageviewer-zoom img {
-    cursor: pointer;
-  }
-
 
   div.thefoto {
     text-align: center;
