@@ -2,14 +2,14 @@
   <div class="container">
     <div class="header">
       <div class="row">
-        <div class="col-xs-4 col-md-3 logo">
+        <div class="col-4 col-lg-3 logo">
           <nuxt-link to="/"><span></span></nuxt-link>
           <h1>Stijn Vermeeren</h1>
         </div>
-        <div class="col-xs-8 col-md-9 menu">
+        <div class="col-8 col-lg-9 menu">
           <ul class="list-inline">
-            <li v-for="item in menu">
-              <nuxt-link to="item.link">{{item.title}}</nuxt-link>
+            <li v-for="item in menu" :class="['list-inline-item', {active: route.meta.activeMenuLink === item.link}]">
+              <nuxt-link :to="item.link">{{item.title}}</nuxt-link>
             </li>
           </ul>
         </div>
@@ -18,19 +18,426 @@
   </div>
 
   <div class="container content">
-    <div class="row">
-      <div class="col-xs-12 col-lg-9">
-        <slot />
-      </div>
-    </div>
+    <slot />
   </div>
 </template>
 
 <script setup>
+  const route = useRoute()
+
   const menu = [
-      {link: 'blog', title: 'HOME'},
-      {link: 'info', title: 'INFO'},
-      {link: 'projects', title: 'PROJECTS'},
-      {link: 'contact', title: 'CONTACT'}
+      {link: '/blog', title: 'HOME'},
+      {link: '/info', title: 'INFO'},
+      {link: '/projects', title: 'PROJECTS'},
+      {link: '/contact', title: 'CONTACT'}
   ]
 </script>
+
+<style>
+  body {
+    font-family: 'Source Sans Pro', sans-serif !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: underline;
+    transition: 0.5s all ease !important;
+  }
+  a:hover {
+    color: #00aeff;
+  }
+  .header {
+    display: table;
+    width: 100%;
+  }
+  .header .row {
+    height: 100%;
+    display: table-row;
+  }
+
+  .header .row > div {
+    display: table-cell;
+    float: none;
+    vertical-align: bottom;
+  }
+
+  .logo {
+    background-color: #00aeff;
+    position:relative;
+  }
+  .logo h1 {
+    width: 100%;
+    bottom: 10px;
+    margin-top: 1.2em;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    letter-spacing: 1px;
+  }
+  .logo span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .menu ul {
+    margin: 0.2em 0;
+  }
+  .menu ul li a {
+    margin-right: 0.5em;
+    padding: 0.3em 0.5em;
+    display: block;
+    color: #4a5054;
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+  }
+  .menu ul li a:hover, .menu ul li.active a{
+    color: #00aeff;
+  }
+
+  .content {
+    border-top:1px solid #d2d2d2;
+    border-bottom:1px solid #d2d2d2;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  img.foto, div.photocaption {
+    float: right;
+    max-width: 50%;
+    margin-left: 2em;
+  }
+  div.photocaption img {
+    width: 100%;
+  }
+  div.photocaption p {
+    margin-top: 0;
+    text-align: center;
+    font-size: 90%;
+  }
+
+  @media(min-width: 1200px) {
+    .container{
+      max-width: 1080px;
+    }
+  }
+  @media(max-width: 992px){
+    .logo h1 {
+      font-size: 22px;
+    }
+    .menu ul li a {
+      font-size: 90%;
+    }
+  }
+  @media(max-width:768px){
+    .logo h1 {
+      font-size: 16px;
+    }
+    .menu ul li a {
+      font-size: 80%;
+    }
+  }
+  @media(max-width:480px){
+    .logo h1 {
+      font-size: 16px;
+    }
+    .menu ul li a {
+      font-size: 75%;
+    }
+  }
+
+  .floatright {
+    float: right;
+  }
+
+
+
+  div.feedback {
+    color: #F0F;
+  }
+
+  br.seperator {
+    clear: both;
+  }
+
+  /* DIVERSEN */
+  h2 img.icon {
+    vertical-align: middle;
+    margin-right: 0.3em;
+  }
+
+  div.homepagediv {
+    margin-top: 1em;
+  }
+  div.homepagediv img.icon {
+    float: left;
+  }
+  div.homepagediv div.fotothumbnail img {
+    margin: -0.3em 0 0 2.9em;
+  }
+  div.homepagediv p, div.homepagediv div.fotothumbnail {
+    margin-left: 50px;
+    text-align: left;
+  }
+  div.homepagediv p.goto {
+    font-size: 95%;
+    margin-top: -0.4em;
+    margin-bottom: 0.5em;
+  }
+  div.homepagediv p.goto img {
+    vertical-align: -0.1em;
+    margin: 0 0.3em 0 1.1em;
+  }
+  div.homepagediv p.contact img {
+    vertical-align: -0.1em;
+    margin: 0 0.3em 0 0;
+  }
+
+
+  div.blogPost blockquote, blockquote.citaat {
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 90%;
+  }
+  div.blogPost blockquote p, blockquote.citaat p {
+    text-indent: 1em;
+    margin: 0.2em 0;
+  }
+  div.blogPost blockquote.poezie p {
+    text-indent: 0;
+    margin: 0.2em 0;
+  }
+  div.blogPost blockquote p span.ellips {
+    color: #666;
+    font-size:  70%;
+  }
+  div.blogPost blockquote p.source {
+    text-align: right;
+    font-style: italic;
+    margin-right: 3em;
+  }
+  div.blogPost p.youtube {
+    text-align: center;
+  }
+  div.blogPost p.blogfoto {
+    text-align: center;
+  }
+
+  p.biofoto {
+    margin: 0.7em 0;
+    text-align: center;
+  }
+  p.bio_inhoud {
+    margin: -.5em 0 1.3em 3em;
+  }
+
+  div.profiles ul li {
+    margin: 0 1em;
+  }
+  div.profiles ul img {
+    border: 0;
+    margin: 0 1em 0.2em 0;
+    vertical-align: middle;
+  }
+
+  div.side-bar-profiles ul {
+    margin: 3em 20px 1em;
+  }
+  div.side-bar-profiles img {
+    margin: 4px;
+    padding: 2px;
+  }
+
+
+  /* FOTOS */
+
+  div#foto {
+    text-align: center;
+    padding: 1em;
+  }
+  div#foto_info {
+    text-align: center;
+  }
+  div#foto_info table {
+    width: 80%;
+    margin: 0 auto;
+  }
+  div#foto_info td {
+    width: 25%;
+  }
+  div#foto_info td.vandaag {
+    width: 50%;
+  }
+  div#foto_info div.beschrijving {
+    font-style: italic;
+  }
+
+
+  ul.albums_list li {
+    float: left;
+    list-style-type: none;
+    width: 185px;
+    height: 150px;
+    margin: .5em 0 1em 0;
+  }
+  ul.albums_list.edit li {
+    height: 185px;
+  }
+  ul.albums_list div.album_thumb {
+    margin-bottom: 0.1em;
+    text-align: center;
+  }
+  ul.albums_list div.titel {
+    font-size: 110%;
+    text-align: center;
+  }
+  ul.albums_list div.periode {
+    font-size: 70%;
+    text-align: center;
+  }
+
+
+  div.gallery figure {
+    float: left;
+    list-style-type: none;
+    width: 165px;
+    height: 100px;
+    margin: .5em 0 0.5em 0;
+    text-align: center;
+  }
+
+  div.gallery figure figcaption {
+    display: none;
+  }
+
+  div.caption {
+    margin: 0.4em 0;
+  }
+
+  div.caption a {
+    color: #8888ff;
+  }
+  div.caption a.extern {
+    color: #8888ff;
+  }
+
+  div.caption div.title {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+  }
+
+  div.caption div.description {
+    font-size: 95%;
+    margin-bottom: 0.3em;
+  }
+
+  div.caption div.location {
+    font-size: 85%;
+  }
+  div.caption div.time {
+    font-size: 85%;
+    margin-bottom: 0.3em;
+  }
+
+  div.panorama img {
+    vertical-align: middle;
+    margin: 0 1em;
+  }
+  div.panorama a {
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    text-decoration: none;
+    display: block;
+    line-height: 40px;
+    width: 30em;
+    padding: 0.1em 0;
+    margin: 0 auto 1.5em auto;
+  }
+  div.panorama a:hover {
+    background-color: #181818;
+  }
+
+  div#imageviewer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  div#imageviewer-zoom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+  }
+  div#imageviewer-zoom img {
+    cursor: pointer;
+  }
+
+
+  div.thefoto {
+    text-align: center;
+    position: relative;
+  }
+
+  div#map_locations {
+    font-size: 70%;
+  }
+
+
+  div#albumbeschrijving p {
+    padding: 0 6em 0.3em 6em;
+  }
+
+
+  div#content p.youtube {
+    text-align: center;
+  }
+
+  div#content a.nietpubliek {
+    color: #b30;
+  }
+
+  /* backwards compatible */
+  div#content p.poezie, div#content p.citaat {
+    text-indent: 0;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 90%;
+  }
+
+  p.naar_archief_top {
+    float:right;
+  }
+  p.naar_archief_bottom {
+    margin-left: 2em;
+  }
+
+  #sphere {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  div#imageviewer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  ul.uetlibergLegend img {
+    float: left;
+    margin: 5px;
+  }
+  ul.uetlibergLegend li {
+    clear: both;
+  }
+</style>

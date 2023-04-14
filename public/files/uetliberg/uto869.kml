@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+        <Document>
+          <name>Uto869's routes on Hikr</name>
+          <Style id="uto">
+            <LineStyle>
+              <color>32000000</color>
+              <width>16</width>
+            </LineStyle>
+          </Style>
+
+        <Placemark>
+          <name>1: Rossweidli - Clarida - TV-Turm (Rossweidlipfad Süd)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post82844.html"&gt;http://www.hikr.org/tour/post82844.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49741,47.35591 8.49723,47.35563 8.49658,47.35534 8.49638,47.35528 8.49632,47.35523 8.49623,47.35520 8.49600,47.35517 8.49587,47.35514 8.49563,47.35494 8.49549,47.35485 8.49544,47.35475 8.49529,47.35466 8.49505,47.35461 8.49479,47.35440 8.49474,47.35427 8.49467,47.35420 8.49459,47.35417 8.49452,47.35409 8.49442,47.35402 8.49432,47.35399 8.49426,47.35392 8.49411,47.35386 8.49372,47.35377 8.49366,47.35370 8.49353,47.35366 8.49342,47.35362 8.49333,47.35357 8.49327,47.35348 8.49326,47.35342 8.49321,47.35333 8.49320,47.35326 8.49315,47.35319 8.49313,47.35310 8.49313,47.35305 8.49320,47.35300 8.49328,47.35294 8.49323,47.35284 8.49304,47.35276 8.49287,47.35257 8.49284,47.35243 8.49279,47.35235 8.49279,47.35225 8.49269,47.35219 8.49258,47.35212 8.49242,47.35205 8.49237,47.35204 8.49222,47.35191 8.49205,47.35182 8.49185,47.35182 8.49171,47.35179 8.49153,47.35172 8.49137,47.35170 8.49127,47.35165 8.49115,47.35165 8.49117,47.35160 8.49075,47.35152 8.49069,47.35137
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>2: Hohenstein - Rossweidli - Bernegg (Trampelpfad Ost, nördl. Teil)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post82918.html"&gt;http://www.hikr.org/tour/post82918.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>8.48899,47.35752 8.48936,47.35772 8.48962,47.35774 8.48975,47.35789 8.48989,47.35788 8.49010,47.35775 8.49055,47.35743 8.49101,47.35727 8.49129,47.35730 8.49140,47.35727 8.49142,47.35721 8.49134,47.35700 8.49114,47.35684 8.49102,47.35648 8.49114,47.35632 8.49131,47.35591 8.49148,47.35580 8.49153,47.35566 8.49148,47.35558 8.49169,47.35513 8.49189,47.35497 8.49211,47.35495 8.49207,47.35479 8.49216,47.35460 8.49259,47.35454 8.49276,47.35453 8.49238,47.35428 8.49226,47.35383 8.49230,47.35363 8.49256,47.35360 8.49301,47.35325 8.49315,47.35319 8.49313,47.35310 8.49333,47.35303 8.49346,47.35295 8.49363,47.35289 8.49370,47.35281 8.49375,47.35267 8.49386,47.35249 8.49398,47.35242 8.49420,47.35240 8.49438,47.35234 8.49445,47.35236 8.49456,47.35237 8.49469,47.35230 8.49479,47.35228 8.49490,47.35223 8.49490,47.35216 8.49478,47.35211 8.49468,47.35205 8.49459,47.35193 8.49452,47.35177 8.49451,47.35170 8.49444,47.35167 8.49453,47.35165 8.49463,47.35156 8.49465,47.35145 8.49467,47.35136 8.49476,47.35136 8.49485,47.35129 8.49502,47.35120 8.49509,47.35114 8.49518,47.35111 8.49522,47.35101 8.49530,47.35095 8.49529,47.35075 8.49540,47.35065 8.49546,47.35058 8.49557,47.35058 8.49558,47.35051 8.49564,47.35040 8.49575,47.35029 8.49572,47.35024 8.49580,47.35014 8.49597,47.35015 8.49607,47.35010 8.49622,47.35011 8.49642,47.35012 8.49661,47.35006 8.49657,47.34999 8.49647,47.34992 8.49647,47.34983 8.49651,47.34980 8.49652,47.34976 8.49642,47.34969 8.49644,47.34960 8.49639,47.34936 8.49647,47.34925 8.49646,47.34917 8.49658,47.34905 8.49672,47.34899 8.49684,47.34905 8.49708,47.34916 8.49719,47.34925 8.49733,47.34936 8.49755,47.34946 8.49780,47.34956 8.49802,47.34961 8.49801,47.34957 8.49794,47.34945 8.49799,47.34936 8.49795,47.34928 8.49788,47.34923 8.49785,47.34916 8.49776,47.34904 8.49773,47.34893 8.49773,47.34882 8.49775,47.34877 8.49793,47.34864 8.49797,47.34859 8.49798,47.34851 8.49816,47.34856 8.49833,47.34863 8.49843,47.34861 8.49854,47.34852 8.49868,47.34845 8.49881,47.34847 8.49892,47.34852 8.49895,47.34849 8.49885,47.34837 8.49877,47.34831 8.49876,47.34822 8.49862,47.34817 8.49859,47.34807 8.49851,47.34799 8.49850,47.34793 8.49841,47.34792 8.49835,47.34782 8.49835,47.34777 8.49850,47.34757 8.49870,47.34742 8.49877,47.34730 8.49902,47.34732 8.49931,47.34728 8.49955,47.34735 8.49985,47.34726 8.50021,47.34732 8.50058,47.34714 8.50103,47.34722 8.50133,47.34742 8.50167,47.34752 8.50196,47.34782 8.50220,47.34785
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>3: Rossweidliegg - Rossweidli - Fernsehturm (Rossweidlipfad Nord)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post82938.html"&gt;http://www.hikr.org/tour/post82938.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>8.49741,47.35591 8.49723,47.35563 8.49658,47.35534 8.49638,47.35528 8.49632,47.35523 8.49623,47.35520 8.49600,47.35517 8.49587,47.35514 8.49563,47.35494 8.49549,47.35485 8.49544,47.35475 8.49529,47.35466 8.49505,47.35461 8.49479,47.35440 8.49474,47.35427 8.49467,47.35420 8.49459,47.35417 8.49452,47.35409 8.49442,47.35402 8.49432,47.35399 8.49426,47.35392 8.49411,47.35386 8.49372,47.35377 8.49366,47.35370 8.49353,47.35366 8.49342,47.35362 8.49333,47.35357 8.49327,47.35348 8.49326,47.35342 8.49321,47.35333 8.49320,47.35326 8.49315,47.35319 8.49304,47.35315 8.49278,47.35302 8.49270,47.35299 8.49238,47.35282 8.49206,47.35261 8.49183,47.35240 8.49175,47.35224 8.49153,47.35214 8.49145,47.35198 8.49106,47.35170 8.49115,47.35165 8.49117,47.35160 8.49075,47.35152 8.49069,47.35137</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>4: Bernegg - Falletsche - Gratstrasse (Trampelpfad Ost, südl. Teil)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post82970.html"&gt;http://www.hikr.org/tour/post82970.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>8.50329,47.34867 8.50327,47.34857 8.50314,47.34851 8.50312,47.34846 8.50305,47.34840 8.50302,47.34834 8.50286,47.34811 8.50285,47.34800 8.50288,47.34793 8.50275,47.34782 8.50271,47.34774 8.50253,47.34766 8.50249,47.34757 8.50252,47.34739 8.50258,47.34734 8.50274,47.34732 8.50283,47.34726 8.50269,47.34718 8.50263,47.34705 8.50244,47.34696 8.50241,47.34687 8.50247,47.34679 8.50248,47.34670 8.50257,47.34656 8.50259,47.34645 8.50272,47.34642 8.50285,47.34641 8.50296,47.34636 8.50310,47.34621 8.50299,47.34615 8.50284,47.34605 8.50264,47.34599 8.50241,47.34600 8.50230,47.34591 8.50216,47.34587 8.50208,47.34578 8.50198,47.34575 8.50201,47.34568 8.50195,47.34559 8.50177,47.34559 8.50171,47.34555 8.50173,47.34548 8.50164,47.34530 8.50145,47.34518 8.50136,47.34515 8.50131,47.34504 8.50135,47.34484 8.50130,47.34475 8.50114,47.34470 8.50115,47.34464 8.50109,47.34459 8.50104,47.34435 8.50108,47.34417 8.50106,47.34408 8.50107,47.34397 8.50118,47.34385 8.50150,47.34388 8.50167,47.34387 8.50164,47.34381 8.50137,47.34365 8.50131,47.34349 8.50139,47.34341 8.50141,47.34328 8.50157,47.34313 8.50155,47.34306 8.50178,47.34298 8.50175,47.34279 8.50182,47.34272 8.50201,47.34270 8.50205,47.34264 8.50201,47.34253 8.50211,47.34238 8.50221,47.34238 8.50225,47.34230 8.50236,47.34231 8.50248,47.34237 8.50261,47.34234 8.50270,47.34236 8.50263,47.34222 8.50259,47.34206 8.50268,47.34195 8.50267,47.34180 8.50293,47.34170 8.50298,47.34166 8.50299,47.34154 8.50306,47.34154 8.50320,47.34162 8.50347,47.34161 8.50355,47.34155 8.50364,47.34149 8.50375,47.34148 8.50392,47.34142 8.50415,47.34141 8.50437,47.34137 8.50453,47.34141 8.50462,47.34137 8.50488,47.34093 8.50492,47.34073 8.50500,47.34058</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>5: Traverse durch die Falletsche</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post82994.html"&gt;http://www.hikr.org/tour/post82994.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+               8.50390,47.33311 8.50403,47.33308 8.50443,47.33308 8.50474,47.33313 8.50480,47.33306 8.50488,47.33315 8.50474,47.33325 8.50440,47.33337 8.50418,47.33357 8.50397,47.33362 8.50392,47.33374 8.50365,47.33388 8.50357,47.33417 8.50345,47.33430 8.50306,47.33446 8.50313,47.33473 8.50311,47.33478 8.50295,47.33496 8.50310,47.33508 8.50306,47.33516 8.50312,47.33527 8.50308,47.33533 8.50301,47.33538 8.50303,47.33555 8.50309,47.33562 8.50313,47.33593 8.50337,47.33611 8.50351,47.33612 8.50369,47.33613 8.50373,47.33624 8.50395,47.33632 8.50435,47.33630 8.50455,47.33627 8.50481,47.33640 8.50501,47.33641 8.50502,47.33632 8.50525,47.33619 8.50544,47.33619 8.50554,47.33620 8.50559,47.33623
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>6: Triemli - Gratweg (neuer Gelbe-Wand-Pfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post83472.html"&gt;http://www.hikr.org/tour/post83472.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.48976,47.35750 8.48994,47.35769 8.49009,47.35776 8.49030,47.35793 8.49053,47.35822 8.49068,47.35853 8.49097,47.35897 8.49119,47.35912 8.49156,47.35933 8.49171,47.35973 	8.49187,47.35989 8.49202,47.36016 8.49237,47.36035 8.49255,47.36045 8.49306,47.36096 8.49332,47.36154 8.49336,47.36181
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>7: Triemli - Friesenburg - Goldbrunnegg - Gratweg (Friesenburgpfad Süd)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post83535.html"&gt;http://www.hikr.org/tour/post83535.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49573,47.35979 8.49506,47.35950 8.49457,47.35908 8.49432,47.35885 8.49417,47.35852 8.49430,47.35837 8.49414,47.35831 8.49407,47.35824 8.49408,47.35801 8.49373,47.35792 8.49369,47.35794 8.49321,47.35760 8.49276,47.35745 8.49233,47.35737 8.49187,47.35727 8.49161,47.35728 8.49148,47.35732 8.49098,47.35707 8.49057,47.35695 8.49025,47.35688
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>8: Triemli - Leiter - Gratweg (alter Gelbe-Wand-Pfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post83534.html"&gt;http://www.hikr.org/tour/post83534.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49201,47.35846 8.49190,47.35841 8.49132,47.35821 8.49102,47.35783 8.49077,47.35759 8.49055,47.35743 8.49044,47.35738 8.49035,47.35742 8.49028,47.35740 8.49033,47.35732 8.48997,47.35717
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>9: Triemli - Sandsteinstufen - Gratweg (Friesenburgpfad Nord)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post83652.html"&gt;http://www.hikr.org/tour/post83652.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49229,47.35821 8.49220,47.35816 8.49191,47.35784 8.49171,47.35752 8.49148,47.35732
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>10: Hüsli - Hüsliegg - Mädikon (Hüslipfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post85507.html"&gt;http://www.hikr.org/tour/post85507.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50786,47.32919 8.50757,47.32903 8.50739,47.32901 8.50730,47.32910 8.50714,47.32904 8.50681,47.32904 8.50668,47.32901 	8.50626,47.32907 8.50614,47.32902 8.50597,47.32886 8.50551,47.32894 8.50500,47.32902 8.50435,47.32908 8.50386,47.32915 8.50349,47.32920 8.50290,47.32917 8.50288,47.32918 8.50265,47.32914 8.50230,47.32913 8.50192,47.32910 8.50178,47.32905 8.50142,47.32903 8.50098,47.32889 8.50077,47.32905
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>11: Direttissima Nord durch die Falletsche</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post85234.html"&gt;http://www.hikr.org/tour/post85234.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50424,47.33545 8.50413,47.33557 8.50416,47.33564 8.50407,47.33570 8.50403,47.33590 8.50385,47.33603 8.50333,47.33639 8.50322,47.33655 8.50306,47.33654 8.50317,47.33665 8.50327,47.33679
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>12: Hüsli - Kleeweidegg - Alpinahütte - Gratstrasse (Kleeweidpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post85913.html"&gt;http://www.hikr.org/tour/post85913.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50835,47.33063 8.50830,47.33073 8.50785,47.33069 8.50760,47.33076 8.50734,47.33080 8.50714,47.33099 8.50678,47.33119 8.50637,47.33152 8.50569,47.33180 8.50503,47.33217 8.50481,47.33221 8.50478,47.33235 8.50468,47.33231 8.50466,47.33238 8.50455,47.33236 8.50448,47.33239 8.50458,47.33250 8.50444,47.33252 8.50433,47.33247 8.50431,47.33258 8.50420,47.33250 8.50421,47.33261 8.50406,47.33257 8.50390,47.33311
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>13: Leimbach - Falletsche-Südrand - Gratstrasse (Leimbachpfad Süd)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post85965.html"&gt;http://www.hikr.org/tour/post85965.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50758,47.33360 8.50713,47.33367 8.50642,47.33350 8.50642,47.33350 8.50563,47.33334 8.50530,47.33336 8.50488,47.33315 
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>14: Leimbach - Manegg - Gratstrasse (Maneggpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post86564.html"&gt;http://www.hikr.org/tour/post86564.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.51240,47.33480 8.51196,47.33484 8.51181,47.33473 8.51153,47.33487 8.51160,47.33512 8.51158,47.33528 8.51186,47.33524 8.51164,47.33554 8.51176,47.33566 8.51169,47.33592 8.51185,47.33620 8.51158,47.33651 8.51156,47.33635 8.51134,47.33617 8.51117,47.33614 8.51053,47.33633 8.50998,47.33642 8.50990,47.33648 8.50962,47.33653 8.50938,47.33650 8.50955,47.33663 8.50980,47.33700 8.50993,47.33708 8.50996,47.33721 8.50996,47.33740 8.50999,47.33751 8.51005,47.33759 	8.51006,47.33769 8.50987,47.33760 8.50987,47.33757 8.50960,47.33740 8.50939,47.33723 8.50915,47.33724 8.50913,47.33721 8.50879,47.33716 8.50872,47.33719 8.50841,47.33714 8.50822,47.33717 8.50821,47.33712 8.50811,47.33713 8.50787,47.33710 8.50772,47.33712 8.50753,47.33718 8.50732,47.33715 8.50698,47.33703 8.50675,47.33700 8.50641,47.33700 8.50592,47.33679 8.50553,47.33674 8.50518,47.33671 8.50475,47.33673 8.50454,47.33668 8.50436,47.33671 8.50426,47.33679 8.50406,47.33685 8.50382,47.33683 8.50354,47.33683 8.50312,47.33679 8.50288,47.33672 8.50275,47.33678 8.50253,47.33680 8.50234,47.33672 8.50234,47.33664 8.50204,47.33643 8.50195,47.33642
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>15: Felsenkammer - Bristenstäfeli - Gratstrasse (Felsenkammerpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post86744.html"&gt;http://www.hikr.org/tour/post86744.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50455,47.33516 8.50484,47.33521 8.50492,47.33519 8.50528,47.33519 8.50519,47.33526 8.50530,47.33528 8.50553,47.33542 8.50565,47.33539 8.50576,47.33530 8.50594,47.33529 8.50601,47.33532 	8.50611,47.33528 8.50622,47.33535 8.50673,47.33528 8.50686,47.33530 8.50667,47.33556 8.50666,47.33574 8.50679,47.33585 8.50679,47.33601 8.50683,47.33605 8.50679,47.33607 8.50690,47.33609 8.50683,47.33614 8.50664,47.33618 8.50649,47.33615 8.50635,47.33608 8.50597,47.33610 8.50575,47.33606 8.50568,47.33607 8.50566,47.33618 8.50559,47.33615 8.50559,47.33637 8.50550,47.33632 8.50558,47.33664
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>16: Direttissima Mitte-Süd durch die Falletsche</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post86746.html"&gt;http://www.hikr.org/tour/post86746.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+<MultiGeometry>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50509,47.33486 8.50500,47.33477 8.50484,47.33472 8.50461,47.33482 8.50430,47.33484 8.50393,47.33475 8.50350,47.33472 8.50313,47.33473
+            </coordinates>
+          </LineString>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50393,47.33475 8.50384,47.33499 8.50344,47.33507 8.50310,47.33508
+            </coordinates>
+          </LineString>
+</MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>17: Direttissima Mitte-Nord durch die Falletsche</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post88230.html"&gt;http://www.hikr.org/tour/post88230.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50426,47.33543 8.50418,47.33531 8.50382,47.33533 8.50349,47.33534 8.50310,47.33530 8.50297,47.33529 8.50236,47.33518 8.50236,47.33518 8.50204,47.33518 8.50187,47.33511 8.50167,47.33514 8.50149,47.33511
+            </coordinates>
+          </LineString>
+        </Placemark><Placemark>
+          <name>18: Direttissima Süd durch die Falletsche</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post88256.html"&gt;http://www.hikr.org/tour/post88256.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50522,47.33475 8.50501,47.33455 8.50487,47.33444 8.50404,47.33425 8.50358,47.33417 8.50360,47.33407 8.50356,47.33401 8.50342,47.33397 8.50345,47.33385 8.50334,47.33397 8.50327,47.33384 8.50312,47.33398 8.50310,47.33370 8.50292,47.33391 8.50289,47.33380 8.50278,47.33388 8.50277,47.33377 8.50266,47.33383 8.50281,47.33359 8.50267,47.33362 8.50277,47.33340
+            </coordinates>
+          </LineString>
+        </Placemark><Placemark>
+          <name>19: Leimbach - Ankenweid - Teehütte (Ankenweidpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post88327.html"&gt;http://www.hikr.org/tour/post88327.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50882,47.33429 8.50868,47.33436 8.50846,47.33440 8.50838,47.33445 8.50811,47.33447 8.50784,47.33465 8.50775,47.33476 8.50754,47.33487 8.50744,47.33500 8.50723,47.33509 8.50714,47.33525 8.50699,47.33528 8.50692,47.33532 8.50686,47.33530 8.50674,47.33546 8.50629,47.33550 8.50591,47.33565 8.50577,47.33591 8.50568,47.33607 8.50566,47.33618 8.50559,47.33615 8.50559,47.33637 8.50550,47.33632 8.50558,47.33664
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>20: Höckler - Mädikerboden - Alt Üetliberg (Höcklerpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post88392.html"&gt;http://www.hikr.org/tour/post88392.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.51088,47.34372 8.50982,47.34392 8.50863,47.34383 8.50791,47.34358 8.50756,47.34336 8.50687,47.34283 8.50655,47.34250 8.50607,47.34228 8.50577,47.34221 8.50510,47.34174 8.50462,47.34141 8.50408,47.34089 8.50372,47.34057 8.50364,47.34046 8.50280,47.34038 8.50206,47.33994 8.50198,47.34002 8.50174,47.34009 8.50156,47.34023 8.50109,47.34034 8.50080,47.34050 8.50048,47.34038 8.50050,47.34050 8.50041,47.34071 8.50039,47.34082 8.50047,47.34087 8.50055,47.34105 8.50055,47.34142 8.50048,47.34160 8.50023,47.34199 8.50016,47.34215 8.50003,47.34217 8.49983,47.34222 8.49954,47.34226 8.49928,47.34227 8.49910,47.34221
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>21: Albisgüetli - Juchegg - Föhreneggweg - Gratstrasse (Jucheggpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post88486.html"&gt;http://www.hikr.org/tour/post88486.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50622,47.34683 8.50625,47.34666 8.50579,47.34648 8.50516,47.34616 8.50386,47.34612 8.50315,47.34621 8.50286,47.34622 8.50242,47.34622 8.50177,47.34633 8.50120,47.34633 8.50115,47.34635 8.50099,47.34644
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>22: Gänziloh/Höckler - ca. 665m ü.M. - Mädikerboden (Gänzilohpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post88493.html"&gt;http://www.hikr.org/tour/post88493.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.51069,47.34274 8.51064,47.34222 8.51053,47.34202 8.51007,47.34157 8.50919,47.34123 8.50873,47.34101 8.50793,47.34099 8.50683,47.34071 8.50602,47.34059 8.50522,47.34044
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>23: Leimbach - Rütschlibachtobel - Falletsche-Rand (Leimbachpfad Nord)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post88542.html"&gt;http://www.hikr.org/tour/post88542.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50631,47.33405 8.50606,47.33389 8.50568,47.33364 8.50544,47.33354 8.50530,47.33336
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>24: Cholbenhof - Cholbenhoferegg - Dürlerstein (Cholbenhofpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post89596.html"&gt;http://www.hikr.org/tour/post89596.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>8.50225,47.35129 8.50141,47.35131 8.50082,47.35124 8.50033,47.35095 8.50011,47.35080 8.49990,47.35068 8.49987,47.35062 8.49963,47.35058 8.49955,47.35052 8.49929,47.35040 8.49923,47.35040 8.49909,47.35032 8.49901,47.35030 8.49893,47.35025 8.49881,47.35023 8.49862,47.35011 8.49847,47.35003 8.49835,47.34987 8.49823,47.34977 8.49818,47.34968 8.49802,47.34961 8.49775,47.34945 8.49771,47.34936 8.49763,47.34927 8.49753,47.34923 8.49730,47.34901 8.49725,47.34894 8.49717,47.34889 8.49712,47.34884 8.49713,47.34880 8.49708,47.34875 8.49706,47.34869 8.49696,47.34857 8.49685,47.34848 8.49677,47.34844 8.49664,47.34826 8.49655,47.34807 8.49647,47.34793 8.49639,47.34781 8.49632,47.34772 8.49634,47.34768</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>25: Triemli - Triemliegg - Hohenstein (Hohensteinpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post89625.html"&gt;http://www.hikr.org/tour/post89625.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49279,47.36220 8.49256,47.36253 8.49231,47.36267 8.49156,47.36251 8.49085,47.36247 8.49022,47.36238 8.49018,47.36234 8.49000,47.36234 8.48961,47.36228 8.48912,47.36228 8.48882,47.36246 8.48879,47.36244 8.48894,47.36230 8.48865,47.36226 8.48833,47.36225 8.48800,47.36193
+             </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>26: Cholbenhof - Rebegg - Claridahütte - TV-Turm (Claridapfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post89627.html"&gt;http://www.hikr.org/tour/post89627.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49924,47.35435 8.49952,47.35364 8.49943,47.35353 8.49892,47.35343 8.49844,47.35318 8.49809,47.35301 8.49730,47.35286 8.49701,47.35269 8.49665,47.35255 8.49631,47.35242 8.49560,47.35226 8.49508,47.35218 8.49465,47.35216 8.49407,47.35205 8.49361,47.35198 8.49324,47.35206 8.49294,47.35220 8.49266,47.35203 8.49259,47.35203 8.49251,47.35201 8.49242,47.35205 8.49237,47.35204 8.49222,47.35191 8.49205,47.35182 8.49185,47.35182 8.49171,47.35179 8.49153,47.35172 8.49137,47.35170 8.49127,47.35165 8.49115,47.35165 8.49117,47.35160 8.49075,47.35152 8.49069,47.35137
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>27: Friesenberg - Zileten - Friesenburgweg - Gratweg (Ziletenpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post90187.html"&gt;http://www.hikr.org/tour/post90187.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49341,47.35611 8.49319,47.35607 8.49296,47.35614 8.49257,47.35612 8.49214,47.35594 8.49166,47.35583 8.49151,47.35573 8.49137,47.35577 8.49132,47.35571 8.49125,47.35573 8.49113,47.35570 8.49103,47.35569 8.49066,47.35560 8.49046,47.35558 8.49035,47.35558 8.49021,47.35548 8.49006,47.35554 8.48989,47.35554 8.48980,47.35552
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>28: Cholbenhof - Staffelegg - Uto Staffel oder Uto Kulm (Staffelpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post90489.html"&gt;http://www.hikr.org/tour/post90489.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49828,47.35132 8.49774,47.35068 8.49769,47.35045 8.49755,47.35031 8.49657,47.35005 8.49627,47.34995 8.49601,47.34979 8.49578,47.34972 8.49569,47.34964 8.49545,47.34953 8.49520,47.34936 8.49498,47.34926 8.49475,47.34911 8.49464,47.34902 8.49439,47.34890 8.49402,47.34879 8.49381,47.34878 8.49348,47.34885 8.49306,47.34907
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>29: Albisgüetli - Klausegg - Dürlerstein (Klauseggpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post91951.html"&gt;http://www.hikr.org/tour/post91951.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>8.49989,47.34926 8.49932,47.34888 8.49901,47.34858 8.49898,47.34855 8.49895,47.34849 8.49893,47.34850 8.49883,47.34843 8.49860,47.34835 8.49822,47.34831 8.49788,47.34810 8.49726,47.34792 8.49678,47.34784 8.49633,47.34768</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>30: Albisgüetli - P. 569 - Alter Üetliberg (Alter-Üetliberg-Pfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post92877.html"&gt;http://www.hikr.org/tour/post92877.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50642,47.34450 8.50581,47.34434 8.50470,47.34413 8.50369,47.34405 8.50260,47.34406 8.50169,47.34388 8.49944,47.34319 8.49848,47.34283
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>31: Zielweg - Friesenburgweg - Gratweg (Lusthäuschenpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post94068.html"&gt;http://www.hikr.org/tour/post94068.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+<MultiGeometry>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>8.49363,47.35566 8.49359,47.35562 8.49330,47.35553 8.49312,47.35541 8.49304,47.35542 8.49291,47.35548 8.49264,47.35537 8.49262,47.35528 8.49232,47.35504 8.49216,47.35498 8.49212,47.35495 8.49173,47.35477 8.49150,47.35462 8.49127,47.35455 8.49098,47.35439 8.49087,47.35429 8.49036,47.35421 8.48994,47.35445 8.48982,47.35444
+            </coordinates>
+          </LineString>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49397,47.35507 8.49379,47.35503 8.49378,47.35496 8.49335,47.35482 8.49310,47.35463 8.49276,47.35453 8.49200,47.35433 8.49175,47.35433 8.49108,47.35420 8.49086,47.35421 8.49084,47.35428
+            </coordinates>
+          </LineString>
+</MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>32: Allmend - Meierholz - Gratstrasse - Fohlenweid (Fohlenweidpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post94123.html"&gt;http://www.hikr.org/tour/post94123.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50713,47.34425 8.50682,47.34399 8.50633,47.34379 8.50603,47.34378 8.50570,47.34355 8.50538,47.34316 8.50521,47.34283 8.50475,47.34235 8.50429,47.34223 8.50418,47.34196 8.50415,47.34170 8.50434,47.34147 8.50437,47.34137 8.50415,47.34141 8.50392,47.34142 8.50375,47.34148 8.50364,47.34149 8.50355,47.34155 8.50351,47.34130 8.50359,47.34120 8.50381,47.34111 8.50372,47.34057 8.50364,47.34046 8.50349,47.34023 8.50328,47.34010 8.50312,47.33990 8.50305,47.33973 8.50301,47.33951 8.50305,47.33927 8.50282,47.33865 8.50282,47.33852 8.50276,47.33837 8.50259,47.33800 8.50201,47.33792 8.50167,47.33794 8.50154,47.33789 8.50155,47.33728
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>33: Cholbenhof - Uto Kulm (Kulmpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post94233.html"&gt;http://www.hikr.org/tour/post94233.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+<MultiGeometry>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49448,47.35118 8.49434,47.35114 8.49420,47.35104 8.49387,47.35086 8.49368,47.35070 8.49340,47.35056 8.49299,47.35009 8.49252,47.34991 8.49227,47.34965 8.49226,47.34954 8.49218,47.34955 8.49217,47.34940 8.49211,47.34936 8.49208,47.34937 8.49202,47.34937
+            </coordinates>
+          </LineString>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49747,47.35131 8.49702,47.35097 8.49658,47.35088 	8.49605,47.35072 8.49531,47.35048 
+
+8.49461,47.35012 8.49430,47.34999 8.49369,47.34969 8.49343,47.34956 8.49331,47.34942 8.49316,47.34941 8.49226,47.34954
+            </coordinates>
+          </LineString>
+</MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>34: Leimbach - Falletsche - Glecksteinhütte (Glecksteinpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post97253.html"&gt;http://www.hikr.org/tour/post97253.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50536,47.33470 8.50539,47.33441 8.50530,47.33422 8.50514,47.33404 8.50482,47.33387 8.50453,47.33387 8.50458,47.33381 8.50435,47.33383 8.50442,47.33377 8.50428,47.33377 8.50434,47.33372 8.50419,47.33358
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>35: Höcklerterrasse - Teehütte - Grat (Von-Meiss-Pfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post102945.html"&gt;http://www.hikr.org/tour/post102945.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.51132,47.34020 8.51044,47.33961 8.50986,47.33920 8.50956,47.33893 8.50913,47.33873 8.50898,47.33861 8.50861,47.33808 8.50823,47.33786 8.50802,47.33761 8.50770,47.33743 8.50768,47.33731
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>36: Höckler - Staatswald - Teehütte - Gratstrasse (Staatswaldpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post103194.html"&gt;http://www.hikr.org/tour/post103194.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.51017,47.34047 8.50945,47.33979 8.50871,47.33918 8.50826,47.33893 8.50820,47.33894 8.50819,47.33886 8.50753,47.33816 8.50741,47.33768 8.50750,47.33734
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>38: Mittelleimbach - Stadtgrenze - Risberg - Baldern (Grenzpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post107590.html"&gt;http://www.hikr.org/tour/post107590.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+<MultiGeometry>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50745,47.32149 8.50689,47.32167 8.50622,47.32159 8.50572,47.32146 8.50532,47.32143 8.50476,47.32121 8.50432,47.32076 8.50376,47.32049 8.50309,47.32018
+            </coordinates>
+          </LineString>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50739,47.32105 8.50671,47.32102 8.50594,47.32085 8.50535,47.32062 8.50480,47.32040 8.50439,47.32026 8.50389,47.32055
+            </coordinates>
+          </LineString>
+</MultiGeometry>
+        </Placemark>
+        <Placemark>
+          <name>39: Mittelleimbach - Hüslibach - Baldern (Mittelleimbachpfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post107591.html"&gt;http://www.hikr.org/tour/post107591.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50576,47.32750 8.50539,47.32751 8.50524,47.32733 8.50508,47.32745 8.50441,47.32733 8.50366,47.32706 8.50322,47.32701 8.50224,47.32669 8.50154,47.32664 8.50109,47.32668
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>40: Rossweidli - Schwarze Hütte (Schwarze-Hütte-Pfad)</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post112554.html"&gt;http://www.hikr.org/tour/post112554.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.49230,47.35363 8.49203,47.35352 8.49148,47.35335 8.49093,47.35317 8.49051,47.35308 8.49045,47.35299 8.49032,47.35295 8.49026,47.35301 8.49009,47.35296 8.48990,47.35282
+            </coordinates>
+          </LineString>
+        </Placemark>
+          <Placemark>
+          <name>Bleikipfad</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post116533.html"&gt;http://www.hikr.org/tour/post116533.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <extrude>1</extrude>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.48999,47.33534 8.49056,47.33581 8.49051,47.33589 8.49055,47.33607 8.49065,47.33608 8.49068,47.33614 8.49113,47.33646 8.49156,47.33666 8.49192,47.33704 8.49194,47.33721 8.49240,47.33736 8.49270,47.33752 8.49286,47.33769 8.49318,47.33768 8.49462,47.33793 8.49488,47.33814 8.49501,47.33827 8.49584,47.33865 8.49629,47.33894 8.49659,47.33905 8.49741,47.33927 8.49791,47.33964 8.49866,47.33984
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Diebispfad</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post116533.html"&gt;http://www.hikr.org/tour/post116533.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <extrude>1</extrude>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.47606,47.34954 8.47621,47.34951 8.47763,47.34982 8.47864,47.35009 8.47924,47.35023 8.47982,47.35014 8.48045,47.35011 8.48076,47.35006 8.48097,47.35000 8.48120,47.35009 8.48208,47.35030 8.48291,47.35053 8.48382,47.35056 8.48432,47.35079 8.48512,47.35116 8.48551,47.35131 8.48584,47.35146 8.48581,47.35153 8.48597,47.35161 8.48601,47.35179 8.48628,47.35188 8.48683,47.35199 8.48694,47.35212 8.48738,47.35208
+            </coordinates>
+          </LineString>
+        </Placemark><Placemark>
+          <name>Loomattpfad</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post116533.html"&gt;http://www.hikr.org/tour/post116533.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <extrude>1</extrude>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.48844,47.34070 8.48900,47.34092 8.48935,47.34090 8.48997,47.34081 8.49048,47.34124 8.49083,47.34139 8.49249,47.34161 8.49319,47.34149 8.49399,47.34131 8.49439,47.34142 8.49511,47.34165 8.49533,47.34181 8.49597,47.34199 8.49625,47.34204 8.49637,47.34222 8.49699,47.34249
+            </coordinates>
+          </LineString>
+        </Placemark><Placemark>
+          <name>Ofengüpfpfad</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post116533.html"&gt;http://www.hikr.org/tour/post116533.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <extrude>1</extrude>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.48529,47.34352 8.48547,47.34427 8.48579,47.34391 8.48608,47.34391 8.48666,47.34447 8.48678,47.34482 8.48717,47.34505 8.48751,47.34522 8.48807,47.34548 8.48841,47.34565 8.48878,47.34578 8.48892,47.34613 8.48898,47.34669 8.48911,47.34685 8.48921,47.34694 8.48940,47.34709 8.48947,47.34724 8.48967,47.34740 8.48987,47.34746 	8.48983,47.34757 8.49020,47.34805 8.49032,47.34811 8.49037,47.34826 8.49065,47.34843 8.49068,47.34848 8.49082,47.34850 8.49087,47.34869
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Chatzenstrickpfad</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post117353.html"&gt;http://www.hikr.org/tour/post117353.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <extrude>1</extrude>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.47447,47.35051 8.47482,47.35093 8.47498,47.35162 8.47575,47.35225 8.47602,47.35285 8.47644,47.35332 8.47717,47.35390  8.47758,47.35399 8.47796,47.35420 8.47839,47.35428 8.47852,47.35429 8.47889,47.35441 8.47925,47.35449 8.47944,47.35467 8.47977,47.35473 8.47980,47.35476
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>41: Rütschlibachpfad in der Fallätsche</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post125670.html"&gt;http://www.hikr.org/tour/post125670.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <extrude>1</extrude>
+            <tessellate>1</tessellate>
+            <coordinates>
+              8.50455,47.33516 8.50447,47.33520 8.50429,47.33543 8.50392,47.33557 8.50370,47.33553 8.50302,47.33548
+            </coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>42: Stufenpfad</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post125834.html"&gt;http://www.hikr.org/tour/post125834.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <extrude>1</extrude>
+            <tessellate>1</tessellate>
+            <coordinates>8.50303,47.33555 8.50285,47.33557 8.50219,47.33559 8.50202,47.33564 8.50190,47.33577 8.50180,47.33586 8.50173,47.33589 8.50167,47.33590</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>42: Föhrenpfad</name>
+          <description>&lt;a href="http://www.hikr.org/tour/post125834.html"&gt;http://www.hikr.org/tour/post125834.html&lt;/a&gt;</description>
+          <styleUrl>#uto</styleUrl>
+          <LineString>
+            <altitudeMode>clampToGround</altitudeMode>
+            <extrude>1</extrude>
+            <tessellate>1</tessellate>
+            <coordinates>8.50316,47.33595 8.50315,47.33598 8.50312,47.33599 8.50300,47.33597 8.50295,47.33592 8.50262,47.33599 8.50246,47.33601 8.50240,47.33596 	8.50234,47.33599 8.50216,47.33599 8.50211,47.33581 8.50183,47.33583</coordinates>
+          </LineString>
+        </Placemark>
+        </Document>
+      </kml>
