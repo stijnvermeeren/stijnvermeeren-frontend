@@ -1,7 +1,7 @@
 <template>
   <h2 class="h2">Contact me</h2>
 
-  <div v-if="success" class="alert alert-success">
+  <div v-if="sent" class="alert alert-success">
     Message sent. Thanks!
   </div>
   <div v-else>
@@ -14,14 +14,14 @@
         </ul>
       </div>
       <div class="d-none">
-        Leave this field empty: <input type="text" name="subject" />
+        Leave this field empty: <input v-model="subject" type="text" name="subject" />
       </div>
       <div>
-        <input name="name" type="text" placeholder="Your name" />
-        <input name="email" type="text" placeholder="Your email address" />
+        <input v-model="name" type="text" placeholder="Your name" />
+        <input v-model="email" type="text" placeholder="Your email address" />
       </div>
       <div>
-        <textarea name="message" rows="10" cols="50" placeholder="Your message"></textarea>
+        <textarea v-model="message" rows="10" cols="50" placeholder="Your message"></textarea>
       </div>
       <div>
         <button type="submit" @click="send()">Send</button>
@@ -31,29 +31,37 @@
 </template>
 
 <script setup>
-  useHead({
-    title: 'Contact me'
-  })
+const name = ref("")
+const email = ref("")
+const subject = ref("")
+const message = ref("")
+const errors = ref([])
+const sent = ref(false)
 
-  definePageMeta({
-    activeMenuLink: 'contact'
-  })
-</script>
-
-<script>
-export default {
-  data() {
-    return {
-      errors: [],
-      success: false
+async function send() {
+  const config = useRuntimeConfig()
+  const {sent, errors} = await $fetch( 'contact/api', {
+    baseURL: config.public.apiBase,
+    method: 'POST',
+    body: {
+      'name': this.name,
+      'email': this.email,
+      'subject': this.subject,
+      'message': this.message
     }
-  },
-  methods: {
-    send() {
+  });
 
-    }
-  }
+  this.sent = sent
+  this.errors = errors
 }
+
+useHead({
+  title: 'Contact me'
+})
+
+definePageMeta({
+  activeMenuLink: 'contact'
+})
 </script>
 
 <style scoped>

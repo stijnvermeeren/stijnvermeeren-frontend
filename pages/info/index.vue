@@ -3,7 +3,7 @@
 
   <h2>About Stijn</h2>
 
-  <p>My name is Stijn Vermeeren <em>(<nuxt-link to="myname">how to pronounce my name</nuxt-link>)</em>. I am {Stijn::age()} years old.</p>
+  <p>My name is Stijn Vermeeren <em>(<nuxt-link to="myname">how to pronounce my name</nuxt-link>)</em>. I am <stijn-age /> years old.</p>
   <p>I am originally from <nuxt-link to="http://maps.google.com/maps?f=q&hl=en&geocode=&q=Aarschot,+Belgium&ie=UTF8&ll=51.018506,4.831924&spn=0.165435,0.466919&z=11&om=1">Aarschot</nuxt-link>, Belgium. Since 2013, I live in Zürich, Switzerland.</p>
 
   <h3>Data Scientist and Software Engineer</h3>
@@ -16,7 +16,7 @@
 
   <h3>Mathematician</h3>
 
-  <p>I have a Bachelor in Mathematics from the <nuxt-link to="http://www.kuleuven.be/">Katholieke Universiteit Leuven</nuxt-link>, a <nuxt-link to="http://www.maths.cam.ac.uk/postgrad/casm/' text= 'Certificate of Advanced Study in Mathematics'} (<em>Part III</em>) from the University of Cambridge and a PhD in Mathematical Logic from the {a link='http://www.maths.leeds.ac.uk/pure/logic/group.html">University of Leeds</nuxt-link>. On the <nuxt-link to="mathematics">mathematics page</nuxt-link> you can find more information on my research.</p>
+  <p>I have a Bachelor in Mathematics from the <nuxt-link to="http://www.kuleuven.be/">Katholieke Universiteit Leuven</nuxt-link>, a <nuxt-link to="http://www.maths.cam.ac.uk/postgrad/casm/">Certificate of Advanced Study in Mathematics</nuxt-link> (<em>Part III</em>) from the University of Cambridge and a PhD in Mathematical Logic from the <nuxt-link to="http://www.maths.leeds.ac.uk/pure/logic/group.html">University of Leeds</nuxt-link>. On the <nuxt-link to="mathematics">mathematics page</nuxt-link> you can find more information on my research.</p>
 
   <p>In 2015, I won a First Prize at the <nuxt-link to="https://www.vwo.be">Vlaamse Wiskunde Olympiade</nuxt-link> and a Honourable Mention at the <nuxt-link to="http://www.imo-official.org/participant_r.aspx?id=8605">International Mathematical Olympiad in Mexico</nuxt-link>. I still enjoy different kinds of problem solving competitions such as <nuxt-link to="http://www.research.ibm.com/ponder/">IBM Ponder This</nuxt-link> and the <nuxt-link to="https://www.aivd.nl/publicaties/publicaties/2016/12/12/kerstpuzzel-2016">NBV Kerstpuzzel</nuxt-link>.</p>
 

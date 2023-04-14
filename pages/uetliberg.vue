@@ -62,4 +62,9 @@ useHead({
 definePageMeta({
   activeMenuLink: 'projects'
 })
+
+useSeoMeta({
+  ogDescription: 'An interactive map of the many fascinating and sometimes surprisingly challenging trails ("Trampelpfade") on the Uetliberg, the 870m tall hill rising above Zürich. Inspired by the detailed documentation of these trails by Martin "Uto869" on Hikr.',
+  ogImage: '/images/uetliberg/og_image.png'
+})
 </script>

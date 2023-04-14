@@ -3,7 +3,7 @@
 
   <h2>Over Stijn</h2>
 
-  <p>Mijn naam is Stijn Vermeeren. Ik ben {Stijn::age()} jaar oud.</p>
+  <p>Mijn naam is Stijn Vermeeren. Ik ben <stijn-age /> jaar oud.</p>
   <p>Ik ben opgegroeid in <nuxt-link to="http://maps.google.com/maps?f=q&hl=en&geocode=&q=Aarschot,+Belgium&ie=UTF8&ll=51.018506,4.831924&spn=0.165435,0.466919&z=11&om=1">Aarschot</nuxt-link>, Vlaams-Brabant. Sinds 2013 woon ik in Zürich, Zwitserland. In mijn <nuxt-link to="bio">ludieke biografie</nuxt-link> kan je meer over mij lezen.</p>
 
   <h3>Data scientist en softwareontwikkelaar</h3>
@@ -12,7 +12,7 @@
 
   <h3>Wiskundige</h3>
 
-  <p>Ik heb een Bachelor in de Wiskunde van de <nuxt-link to="http://www.kuleuven.be/">Katholieke Universiteit Leuven</nuxt-link>, een <nuxt-link to="http://www.maths.cam.ac.uk/postgrad/casm/' text= 'Certificate of Advanced Study in Mathematics'} (<em>Part III</em>) van de University of Cambridge en een doctoraat in wiskundige logica van de {a link='http://www.maths.leeds.ac.uk/pure/logic/group.html">University of Leeds</nuxt-link>. Op mijn <nuxt-link to="wiskunde">wiskundepagina</nuxt-link> vind je meer information over mijn onderzoek.</p>
+  <p>Ik heb een Bachelor in de Wiskunde van de <nuxt-link to="http://www.kuleuven.be/">Katholieke Universiteit Leuven</nuxt-link>, een <nuxt-link to="http://www.maths.cam.ac.uk/postgrad/casm/">Certificate of Advanced Study in Mathematics</nuxt-link> (<em>Part III</em>) van de University of Cambridge en een doctoraat in wiskundige logica van de <nuxt-link to="http://www.maths.leeds.ac.uk/pure/logic/group.html">University of Leeds</nuxt-link>. Op mijn <nuxt-link to="/wiskunde">wiskundepagina</nuxt-link> vind je meer information over mijn onderzoek.</p>
 
   <p>In 2015 won ik een eerste prijs bij de <nuxt-link to="https://www.vwo.be">Vlaamse Wiskunde Olympiade</nuxt-link> en een eervolle vermelding bij de <nuxt-link to="http://www.imo-official.org/participant_r.aspx?id=8605">International Mathematical Olympiad in Mexico</nuxt-link>. Ik hou me nog steeds graag bezig met wiskundige problemen en competities zoals <nuxt-link to="http://www.research.ibm.com/ponder/">IBM Ponder This</nuxt-link>, de Nederlandse <nuxt-link to="https://www.aivd.nl/onderwerpen/aivd-kerstpuzzel">AIVD Kerstpuzzel</nuxt-link> en de Belgische <nuxt-link to="https://beldefnews.mil.be/de-eindejaarspuzzel-extreme-hersengymnastiek/">Eindejaarspuzzel van Defensie</nuxt-link>.</p>
 
@@ -20,12 +20,12 @@
 
   <ul>
     <li>Mijn moedertaal is <strong>Nederlands</strong>.</li>
-    <li lang="en">I speak <strong><nuxt-link to="info">English</nuxt-link></strong> fluently.</li>
-    <li lang="de">Ich spreche auch <strong><nuxt-link to="info/deutsch">Deutsch</nuxt-link></strong> (und au es bitzeli Mundart).</li>
-    <li lang="it">Ciao! Parlo <strong><nuxt-link to="info/italiano">italiano</nuxt-link></strong>.</li>
-    <li lang="es">Estoy aprendiendo <strong><nuxt-link to="info/espanol">español</nuxt-link></strong>.</li>
-    <li lang="no">Jeg snakker <strong><nuxt-link to="info/norsk">norsk</nuxt-link></strong>.</li>
-    <li lang="cs">Nemluvím <strong><nuxt-link to="info/cesky">česky</nuxt-link></strong>.</li>
+    <li lang="en">I speak <strong><nuxt-link to="/info">English</nuxt-link></strong> fluently.</li>
+    <li lang="de">Ich spreche auch <strong><nuxt-link to="/info/deutsch">Deutsch</nuxt-link></strong> (und au es bitzeli Mundart).</li>
+    <li lang="it">Ciao! Parlo <strong><nuxt-link to="/info/italiano">italiano</nuxt-link></strong>.</li>
+    <li lang="es">Estoy aprendiendo <strong><nuxt-link to="/info/espanol">español</nuxt-link></strong>.</li>
+    <li lang="no">Jeg snakker <strong><nuxt-link to="/info/norsk">norsk</nuxt-link></strong>.</li>
+    <li lang="cs">Nemluvím <strong><nuxt-link to="/info/cesky">česky</nuxt-link></strong>.</li>
   </ul>
 
   <h3>Bergwandelaar en alpinist</h3>
@@ -55,7 +55,10 @@
 
 <script setup>
 useHead({
-  title: 'Over Stijn'
+  title: 'Over Stijn',
+  htmlAttrs: {
+    lang: 'nl'
+  }
 })
 
 definePageMeta({

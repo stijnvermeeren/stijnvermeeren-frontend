@@ -15,7 +15,7 @@
 
   <p>Due to the many subtle ways in which a sequence can have a regularity, it took until the 1960s before the first robust definition of algorithmic randomness was given, by Per Martin-Löf. In the following decades, many more definitions of randomness were obtained, using a wide range of different tools, such as measure theory, martingales, Kolmogorov complexity, computable analysis and ergodic theory. Some of these approaches turned out the give equivalent definitions, but other did not. This led to different notions of randomness, such as Martin-Löf randomness, computable randomness and Schnorr randomness. All of them are reasonable randomness notions, but some are stronger than others. The study of the relative strength and the properties of these notions, has received an increasing amount of attention over the past years.</p>
 
-  <p><nuxt-link to="mathematics">Back to my mathematics page</nuxt-link>.</p>
+  <p><nuxt-link to="/mathematics">Back to my mathematics page</nuxt-link>.</p>
 
   <h3>Further reading:</h3>
   <ul>

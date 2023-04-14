@@ -7,7 +7,7 @@
   <h3>Berekenbaarheidstheorie en algorithmic randomness</h3>
 
   <p>Het onderwerp van mijn doctoraatsthesis was berekenbaarheidstheorie (<em>computability theory</em>), meer bepaald <em>algorithmic randomness</em>.</p>
-  <p>Ik heb een <nuxt-link to="wiskunde/randomness">korte introductie tot algorithmic randomness</nuxt-link> geschreven voor deze website.</p>
+  <p>Ik heb een <nuxt-link to="/wiskunde/randomness">korte introductie tot algorithmic randomness</nuxt-link> geschreven voor deze website.</p>
   <p>Mijn thesis is getiteld "<nuxt-link to="download/mathematics/Vermeeren_S_Mathematics_PhD_2013.pdf">Notions and applications of algorithmic randomness</nuxt-link>" (pdf, 801 kB).</p>
 
   <h3>Artikels en wiskundige downloads:</h3>
@@ -45,7 +45,10 @@
 
 <script setup>
   useHead({
-    title: 'Wiskunde'
+    title: 'Wiskunde',
+    htmlAttrs: {
+      lang: 'nl'
+    }
   })
 
   definePageMeta({

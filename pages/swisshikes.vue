@@ -13,6 +13,8 @@
 </template>
 
 <script setup>
+import {useApiFetch} from "../composables/useApiFetch";
+
 useHead({
   title: 'My hikes in Switzerland'
 })
@@ -21,5 +23,5 @@ definePageMeta({
   activeMenuLink: 'projects'
 })
 
-const { data } = useFetch( 'http://localhost:8080/swisshikes');
+const { data } = useApiFetch('/projects/swisshikes-api');
 </script>

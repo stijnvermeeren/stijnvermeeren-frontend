@@ -7,7 +7,7 @@
   <h3>Computability theory and algorithmic randomness</h3>
 
   <p>The topic of my thesis was computability theory, and more specifically algorithmic randomness.</p>
-  <p>I've written a <nuxt-link to="mathematics/randomness">quick introduction to algorithmic randomness</nuxt-link> for this website.</p>
+  <p>I've written a <nuxt-link to="/mathematics/randomness">quick introduction to algorithmic randomness</nuxt-link> for this website.</p>
   <p>My full thesis is titled "<nuxt-link to="download/mathematics/Vermeeren_S_Mathematics_PhD_2013.pdf">Notions and applications of algorithmic randomness</nuxt-link>" (pdf, 801 kB).</p>
 
 

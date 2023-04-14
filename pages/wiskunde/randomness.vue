@@ -15,7 +15,7 @@
 
   <p>Door de vele subtiele manieren waarin een rij een regelmatigheid kan hebben, duurde het tot in de jaren 1960 eer de eerste degelijke definitie van algorithmic randomness werd gegeven, door Per Martin-Löf. In de daaropvolgende decennia werden er veel nieuwe definities voorgesteld, vanuit zeer verschillende invalshoeken, zoals maattheorie, martingales, Kolmogorov-complexiteit, berekenbare analyse en ergodische theorie. Sommige benaderingen leidden tot equivalentie definities, maar andere niet. Zo zijn er nu veel verschillende noties van randomness, zoals Martin-Löf randomness, computable randomness en Schnorr randomness. Dit zijn allemaal redelijke definities van randomness, maar de ene is sterker dan de andere. De studie van de relatieve sterkte en van de eigenschappen van deze noties staat centraal in algorithmic randomness, en heeft over de laatste jaren steeds meer aandacht gekregen.</p>
 
-  <p><nuxt-link to="wiskunde">Terug naar mijn wiskundepagina</nuxt-link>.</p>
+  <p><nuxt-link to="/wiskunde">Terug naar mijn wiskundepagina</nuxt-link>.</p>
 
   <h3>Meer lezen:</h3>
   <ul>
@@ -27,7 +27,10 @@
 
 <script setup>
 useHead({
-  title: 'Algorithmic randomness'
+  title: 'Algorithmic randomness',
+  htmlAttrs: {
+    lang: 'nl'
+  }
 })
 
 definePageMeta({
