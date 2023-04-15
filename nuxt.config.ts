@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
     runtimeConfig: {
         public: {
-            apiBase: 'http://localhost:8080', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
+            apiUriClient: 'http://localhost:8080',
+            apiUriServer: 'http://localhost:8080',
         }
     },
     hooks: {

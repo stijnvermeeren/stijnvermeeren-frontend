@@ -1,4 +1,4 @@
 export const useApiFetch = (request, opts) => {
-    const config = useRuntimeConfig()
-    return useFetch(request, { baseURL: config.public.apiBase, ...opts })
+    const apiUri = useApiUri()
+    return useFetch(request, { baseURL: apiUri, ...opts })
 }

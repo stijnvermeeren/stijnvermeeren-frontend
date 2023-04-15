@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div v-if="data" class="row">
     <div class="col-xs-12 col-lg-9">
       <div class="content-grid clearfix">
         <div v-if="page > 1">
@@ -68,7 +68,7 @@
 <script setup>
   const route = useRoute();
   const router = useRouter();
-  const page = ref(route.query.page)
+  const page = ref(route.query.page || 1)
   const { data, refresh } = await useApiFetch('/stream-api', { query: { page: page } } );
 
   watch(() => route.query.page, (newValue) => {

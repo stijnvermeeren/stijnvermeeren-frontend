@@ -39,9 +39,9 @@ const errors = ref([])
 const sent = ref(false)
 
 async function send() {
-  const config = useRuntimeConfig()
+  const apiUri = useApiFetch()
   const {sent, errors} = await $fetch( 'contact/api', {
-    baseURL: config.public.apiBase,
+    baseURL: apiUri,
     method: 'POST',
     body: {
       'name': this.name,
