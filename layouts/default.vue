@@ -255,11 +255,13 @@
   }
 
 
+  ul.albums_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
   ul.albums_list li {
-    float: left;
     list-style-type: none;
-    width: 185px;
-    height: 150px;
+    width: 150px;
     margin: .5em 0 1em 0;
   }
   ul.albums_list.edit li {
