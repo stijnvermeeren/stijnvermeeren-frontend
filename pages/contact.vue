@@ -31,6 +31,8 @@
 </template>
 
 <script setup>
+import {useApiUri} from "../composables/useApiUri";
+
 const name = ref("")
 const email = ref("")
 const subject = ref("")
@@ -39,7 +41,7 @@ const errors = ref([])
 const sent = ref(false)
 
 async function send() {
-  const apiUri = useApiFetch()
+  const apiUri = useApiUri()
   const {sent, errors} = await $fetch( 'contact/api', {
     baseURL: apiUri,
     method: 'POST',
