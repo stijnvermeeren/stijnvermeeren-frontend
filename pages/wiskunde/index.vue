@@ -1,8 +1,8 @@
 <template>
   <h2>Wiskunde</h2>
 
-  <p>Tussen oktober 2009 en april 2013 voltooide ik mijn doctoraat in de <nuxt-link to="http://www.maths.leeds.ac.uk/pure/logic/group.html">wiskundige logica aan de University of Leeds</nuxt-link>.</p>
-  <p>Mijn promotoren waren <nuxt-link to="http://www1.maths.leeds.ac.uk/~pmt6sbc/">S. Barry Cooper</nuxt-link> en <nuxt-link to="http://aemlewis.co.uk/">Andy Lewis</nuxt-link>.</p>
+  <p>Tussen oktober 2009 en april 2013 voltooide ik mijn doctoraat in de <nuxt-link to="https://logic.leeds.ac.uk/">wiskundige logica aan de University of Leeds</nuxt-link>.</p>
+  <p>Mijn promotoren waren wijlen <nuxt-link to="https://en.wikipedia.org/wiki/S._Barry_Cooper">S. Barry Cooper</nuxt-link> en <nuxt-link to="https://lewis-pye.com/">Andy Lewis</nuxt-link>.</p>
 
   <h3>Berekenbaarheidstheorie en algorithmic randomness</h3>
 

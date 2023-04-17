@@ -1,8 +1,8 @@
 <template>
   <h2>Mathematics</h2>
 
-  <p>From October 2009 to April 2013, I worked on a Ph.D in <nuxt-link to="http://www.maths.leeds.ac.uk/pure/logic/group.html">Mathematical Logic at the University of Leeds</nuxt-link>.</p>
-  <p>My supervisors were the late <nuxt-link to="http://www1.maths.leeds.ac.uk/~pmt6sbc/">S. Barry Cooper</nuxt-link> (<nuxt-link to="https://www.theguardian.com/education/2015/nov/17/barry-cooper-obituary">obituary</nuxt-link>) and <nuxt-link to="http://aemlewis.co.uk/">Andy Lewis</nuxt-link>.</p>
+  <p>From October 2009 to April 2013, I worked on a Ph.D in <nuxt-link to="https://logic.leeds.ac.uk/">Mathematical Logic at the University of Leeds</nuxt-link>.</p>
+  <p>My supervisors were the late <nuxt-link to="https://en.wikipedia.org/wiki/S._Barry_Cooper">S. Barry Cooper</nuxt-link> (<nuxt-link to="https://www.theguardian.com/education/2015/nov/17/barry-cooper-obituary">obituary</nuxt-link>) and <nuxt-link to="https://lewis-pye.com/">Andy Lewis</nuxt-link>.</p>
 
   <h3>Computability theory and algorithmic randomness</h3>
 

@@ -46,10 +46,10 @@ async function send() {
     baseURL: apiUri,
     method: 'POST',
     body: {
-      'name': this.name,
-      'email': this.email,
-      'subject': this.subject,
-      'message': this.message
+      'name': name.value,
+      'email': email.value,
+      'subject': subject.value,
+      'message': message.value
     }
   });
 
