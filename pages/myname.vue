@@ -1,7 +1,7 @@
 <template>
   <h2>How to pronounce my name</h2>
 
-  <p>TL;DR: <nuxt-link to="download/stijnvermeeren.mp3">listen to a recording of my name (mp3, 53.5 KB)</nuxt-link>.</p>
+  <p>TL;DR: <a href="/files/stijnvermeeren.mp3">listen to a recording of my name (mp3, 53.5 KB)</a>.</p>
 
   <h3>Stijn</h3>
 
