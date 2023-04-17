@@ -23,6 +23,11 @@
         <slot />
       </div>
     </div>
+    <div class="row">
+      <div class="col attribution">
+        Favicon created by <a href="https://www.flaticon.com/free-icons/sea-lion" title="sea lion icons">Vectors Market - Flaticon</a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -40,6 +45,16 @@
 <style>
   body {
     font-family: 'Source Sans Pro', sans-serif !important;
+  }
+
+  div.attribution {
+    text-align: center;
+    font-size: 80%;
+    color: #bbb;
+    margin-top: 20px;
+  }
+  div.attribution a {
+    color: #bbb !important;
   }
 
   div.content a {
@@ -213,14 +228,6 @@
     border: 0;
     margin: 0 1em 0.2em 0;
     vertical-align: middle;
-  }
-
-  div.side-bar-profiles ul {
-    margin: 3em 20px 1em;
-  }
-  div.side-bar-profiles img {
-    margin: 4px;
-    padding: 2px;
   }
 
 

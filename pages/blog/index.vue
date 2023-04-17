@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="col-lg-3 visible-lg side-bar">
-      <h3 class="h4">I'm Stijn Vermeeren.</h3>
+      <h3>I'm Stijn Vermeeren.</h3>
       <ul>
         <li>Belgian in Zürich.</li>
         <li>Data Scientist and Scala Software Engineer (<nuxt-link to="/files/cv/CV-Stijn_Vermeeren.pdf">view CV</nuxt-link>).</li>
@@ -36,9 +36,12 @@
         <li>Hiker and mountaineer.</li>
         <li>2-kyu go player.</li>
       </ul>
-      <p><nuxt-link to="info">More about me</nuxt-link>.<br /><nuxt-link to="myname">How to pronounce my name</nuxt-link>.</p>
+      <p>
+        <nuxt-link to="info">More about me</nuxt-link>.<br />
+        <nuxt-link to="myname">How to pronounce my name</nuxt-link>.
+      </p>
   
-      <h3 class="h4">Ik ben Stijn Vermeeren.</h3>
+      <h3>Ik ben Stijn Vermeeren.</h3>
       <ul>
         <li>Vlaming in Zürich.</li>
         <li>Data scientist en Scala softwareontwikkelaar.</li>
@@ -47,19 +50,21 @@
         <li>Bergwandelaar en alpinist.</li>
         <li>2-kyu go-speler.</li>
       </ul>
-      <p><nuxt-link to="info/nederlands">Meer over mij</nuxt-link>.</p>
+      <p>
+        <nuxt-link to="info/nederlands">Meer over mij</nuxt-link>.
+      </p>
   
       <div class="side-bar-profiles">
-        <ul class="list-inline">
-          <li class="list-inline-item"><social-link link="http://ch.linkedin.com/in/stijnvermeeren/" title="LinkedIn" image="linkedin.png" no-content /></li>
-          <li class="list-inline-item"><social-link link="https://www.xing.com/profile/Stijn_Vermeeren" title="XING" image="XING.png" no-content /></li>
-          <li class="list-inline-item"><social-link link="http://www.facebook.com/stijnvermeeren" title="Facebook" image="facebook.png" no-content /></li>
-          <li class="list-inline-item"><social-link link="http://www.icheckmovies.com/profiles/stijnvermeeren/" title="iCheckMovies" image="icheckmovies.png" no-content /></li>
-          <li class="list-inline-item"><social-link link="http://www.hikr.org/user/Stijn" title="Hikr" image="hikr.png" no-content /></li>
-          <li class="list-inline-item"><social-link link="http://duolingo.com/#/stijnvermeeren" title="Duolingo" image="duolingo.png" no-content /></li>
-          <li class="list-inline-item"><social-link link="https://lichess.org/@/stijnvermeeren" title="Lichess" image="lichess.png" no-content /></li>
-          <li class="list-inline-item"><social-link link="https://my.flightradar24.com/stijnvermeeren" title="myFlightradar24" image="myflightradar24.png" no-content /></li>
-        </ul>
+        <div><social-link link="http://ch.linkedin.com/in/stijnvermeeren/" title="LinkedIn" image="linkedin.png" no-content /></div>
+        <div><social-link link="https://www.xing.com/profile/Stijn_Vermeeren" title="XING" image="XING.png" no-content /></div>
+        <div><social-link link="http://www.facebook.com/stijnvermeeren" title="Facebook" image="facebook.png" no-content /></div>
+        <div><social-link link="http://www.icheckmovies.com/profiles/stijnvermeeren/" title="iCheckMovies" image="icheckmovies.png" no-content /></div>
+      </div>
+      <div class="side-bar-profiles">
+        <div><social-link link="http://www.hikr.org/user/Stijn" title="Hikr" image="hikr.png" no-content /></div>
+        <div><social-link link="http://duolingo.com/#/stijnvermeeren" title="Duolingo" image="duolingo.png" no-content /></div>
+        <div><social-link link="https://lichess.org/@/stijnvermeeren" title="Lichess" image="lichess.png" no-content /></div>
+        <div><social-link link="https://my.flightradar24.com/stijnvermeeren" title="myFlightradar24" image="myflightradar24.png" no-content /></div>
       </div>
     </div>
   </div>
@@ -100,6 +105,28 @@
 
   div.side-bar {
     margin-top: 10px;
+  }
+
+  div.side-bar h3 {
+    font-size: 120%;
+    margin-top: 1em;
+  }
+
+  div.side-bar p {
+    margin-bottom: 3em;
+  }
+
+  div.side-bar-profiles {
+    text-align: center;
+  }
+
+  div.side-bar-profiles > div {
+    display: inline-block;
+  }
+
+  div.side-bar-profiles :deep(img) {
+    margin: 6px;
+    padding: 3px;
   }
 
   div.stream-date {
