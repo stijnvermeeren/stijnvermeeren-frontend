@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
     runtimeConfig: {
         public: {
-            apiUriClient: 'http://localhost:8080',
-            apiUriServer: 'http://localhost:8080',
+            apiUriClient: '',
+            apiUriServer: '',
         }
     },
     hooks: {

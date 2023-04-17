@@ -9,7 +9,7 @@ definePageMeta({
   layout: "standalone",
 });
 
-useHead({
+useMeta({
   title: 'Panorama'
 })
 </script>

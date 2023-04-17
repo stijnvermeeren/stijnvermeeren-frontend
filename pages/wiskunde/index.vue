@@ -44,11 +44,9 @@
 </template>
 
 <script setup>
-  useHead({
+  useMeta({
     title: 'Wiskunde',
-    htmlAttrs: {
-      lang: 'nl'
-    }
+    lang: 'nl'
   })
 
   definePageMeta({

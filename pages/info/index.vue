@@ -62,7 +62,7 @@
 </template>
 
 <script setup>
-useHead({
+useMeta({
   title: 'About Stijn'
 })
 

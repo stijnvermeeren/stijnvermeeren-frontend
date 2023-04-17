@@ -55,16 +55,13 @@
 </template>
 
 <script setup>
-useHead({
-  title: 'Trampelpfade am Uetliberg'
+useMeta({
+  title: 'Trampelpfade am Uetliberg',
+  description: 'An interactive map of the many fascinating and sometimes surprisingly challenging trails ("Trampelpfade") on the Uetliberg, the 870m tall hill rising above Zürich. Inspired by the detailed documentation of these trails by Martin "Uto869" on Hikr.',
+  image: '/images/uetliberg/og_image.png'
 })
 
 definePageMeta({
   activeMenuLink: '/projects'
-})
-
-useSeoMeta({
-  ogDescription: 'An interactive map of the many fascinating and sometimes surprisingly challenging trails ("Trampelpfade") on the Uetliberg, the 870m tall hill rising above Zürich. Inspired by the detailed documentation of these trails by Martin "Uto869" on Hikr.',
-  ogImage: '/images/uetliberg/og_image.png'
 })
 </script>

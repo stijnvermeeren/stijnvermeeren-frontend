@@ -55,7 +55,7 @@ async function send() {
   this.errors = errors
 }
 
-useHead({
+useMeta({
   title: 'Contact me'
 })
 

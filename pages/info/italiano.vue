@@ -9,11 +9,9 @@
 </template>
 
 <script setup>
-useHead({
+useMeta({
   title: 'A proposito di Stijn',
-  htmlAttrs: {
-    lang: 'it'
-  }
+  lang: 'it'
 })
 
 definePageMeta({

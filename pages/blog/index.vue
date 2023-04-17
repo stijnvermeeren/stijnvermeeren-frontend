@@ -80,6 +80,10 @@
     })
   })
 
+  useMeta({
+    title: 'Blog'
+  })
+
   definePageMeta({
     alias: ['/'],
     activeMenuLink: '/blog'

@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-useHead({
+useMeta({
   title: 'Algorithmic randomness'
 })
 

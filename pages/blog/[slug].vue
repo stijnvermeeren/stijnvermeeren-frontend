@@ -9,6 +9,10 @@
 <script setup>
 const route = useRoute();
 const { data: post } = await useApiFetch(`/blog-api/${route.params.slug}`);
+
+useMeta({
+  title: `Blog: ${post.value.title}`
+})
 </script>
 
 <style scoped>

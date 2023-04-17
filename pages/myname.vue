@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-useHead({
+useMeta({
   title: 'How to pronounce my name'
 })
 

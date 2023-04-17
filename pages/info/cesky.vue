@@ -12,11 +12,9 @@
 </template>
 
 <script setup>
-useHead({
+useMeta({
   title: 'O Stijnovi',
-  htmlAttrs: {
-    lang: 'cs'
-  }
+  lang: 'cs'
 })
 
 definePageMeta({

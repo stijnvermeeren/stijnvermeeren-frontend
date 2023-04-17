@@ -16,7 +16,7 @@
 <script setup>
 const { data: albums } = await useApiFetch('/foto/api');
 
-useHead({
+useMeta({
   title: 'Fotoalbums'
 })
 </script>

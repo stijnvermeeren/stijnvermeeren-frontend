@@ -11,7 +11,7 @@ definePageMeta({
   layout: "standalone",
 });
 
-useHead({
+useMeta({
   title: '360° foto'
 })
 </script>

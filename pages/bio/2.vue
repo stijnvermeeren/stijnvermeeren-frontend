@@ -23,10 +23,8 @@
 </template>
 
 <script setup>
-useHead({
-  htmlAttrs: {
-    lang: 'nl'
-  }
+useMeta({
+  lang: 'nl'
 })
 
 definePageMeta({

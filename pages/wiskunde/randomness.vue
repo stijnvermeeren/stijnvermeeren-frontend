@@ -26,11 +26,9 @@
 </template>
 
 <script setup>
-useHead({
+useMeta({
   title: 'Algorithmic randomness',
-  htmlAttrs: {
-    lang: 'nl'
-  }
+  lang: 'nl'
 })
 
 definePageMeta({

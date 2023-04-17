@@ -14,11 +14,9 @@
 </template>
 
 <script setup>
-useHead({
+useMeta({
   title: 'Über Stijn',
-  htmlAttrs: {
-    lang: 'de'
-  }
+  lang: 'de'
 })
 
 definePageMeta({

@@ -37,10 +37,8 @@
 <script setup>
 import BioContents from "../../components/BioContents";
 
-useHead({
-  htmlAttrs: {
-    lang: 'nl'
-  }
+useMeta({
+  lang: 'nl'
 })
 
 definePageMeta({

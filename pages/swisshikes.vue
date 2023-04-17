@@ -24,5 +24,4 @@ definePageMeta({
 })
 
 const { data } = await useApiFetch('/projects/swisshikes-api');
-console.log(data)
 </script>

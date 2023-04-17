@@ -71,6 +71,12 @@ onUnmounted(() => {
     lightbox = null;
   }
 });
+
+useMeta({
+  title: `Fotoalbum: ${album.value.title}`,
+  description: album.value.time_range,
+  image: album.value.ogImage
+})
 </script>
 
 <style scoped>
