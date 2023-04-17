@@ -26,7 +26,9 @@
 
             <div class="title">{{photo.title}}</div>
 
-            <div v-if="photo.description" class="description">{{photo.description}}</div>
+            <div v-if="photo.description" class="description">
+              <vue-markdown :source="photo.description" />
+            </div>
             <div class="location"><strong>Plaats</strong>: {{ photo.location }} (<nuxt-link :to="photo.google_link">Google Maps</nuxt-link>)</div>
             <div class="time"><strong>Tijdstip</strong>: {{photo.datetime}}</div>
           </div>
@@ -39,6 +41,7 @@
 </template>
 
 <script setup>
+import VueMarkdown from 'vue-markdown-render'
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import PhotoSwipeDynamicCaption from "photoswipe-dynamic-caption-plugin";
 import 'photoswipe/style.css';
