@@ -42,7 +42,7 @@ const sent = ref(false)
 
 async function send() {
   const apiUri = useApiUri()
-  const {sent, errors} = await $fetch( 'contact/api', {
+  const response = await $fetch( 'contact/api', {
     baseURL: apiUri,
     method: 'POST',
     body: {
@@ -53,8 +53,8 @@ async function send() {
     }
   });
 
-  this.sent = sent
-  this.errors = errors
+  sent.value = response.sent
+  errors.value = response.errors
 }
 
 useMeta({
