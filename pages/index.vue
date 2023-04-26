@@ -1,5 +1,5 @@
 <template>
-  <v-row class="mt-2">
+  <v-row>
     <v-col>
       <v-tabs v-model="selectedLanguage" class="mb-3" density="compact">
         <v-tab value="en">English</v-tab>
