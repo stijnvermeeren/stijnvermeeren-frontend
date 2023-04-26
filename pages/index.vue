@@ -31,10 +31,10 @@
             </infobox-line>
             <infobox-line icon="workplace.png">
               9 years of professional experience as data science team lead.
-              <v-btn to="/files/cv/CV-Stijn_Vermeeren.pdf" size="small" rounded="3" class="mx-2">
+              <v-btn href="/files/cv/CV-Stijn_Vermeeren.pdf" size="small" rounded="3" class="mx-2">
                 <v-img src="/images/icons/cv.png" width="18" class="mr-2" /> my CV
               </v-btn>
-              <v-btn to="http://ch.linkedin.com/in/stijnvermeeren/" size="small" rounded="3" class="mx-2">
+              <v-btn href="http://ch.linkedin.com/in/stijnvermeeren/" size="small" rounded="3" class="mx-2">
                 <v-img src="/images/socialmedia/linkedin.png" width="18" class="mr-2" /> LinkedIn
               </v-btn>
             </infobox-line>
@@ -43,7 +43,7 @@
               <a href="https://tijdloze.rocks">tijdloze.rocks</a>,
               <nuxt-link to="/uetliberg">Uetliberg Trampelpfade</nuxt-link>,
               <nuxt-link to="/swisshikes">my hikes in Switzerland</nuxt-link>.
-              <v-btn to="https://github.com/stijnvermeeren" size="small" rounded="3" class="mx-2">
+              <v-btn href="https://github.com/stijnvermeeren" size="small" rounded="3" class="mx-2">
                 <v-img src="/images/socialmedia/github.png" width="18" class="mr-2" /> Github
               </v-btn>
               <v-btn to="/projects" size="small" rounded="3" class="mx-2">
@@ -72,10 +72,10 @@
             </infobox-line>
             <infobox-line icon="workplace.png">
               9 jaren professionele ervaring als teamleider data science.
-              <v-btn to="/files/cv/CV-Stijn_Vermeeren.pdf" size="small" rounded="3" class="mx-2">
+              <v-btn href="/files/cv/CV-Stijn_Vermeeren.pdf" size="small" rounded="3" class="mx-2">
                 <v-img src="/images/icons/cv.png" width="18" class="mr-2" /> mijn CV (Engels)
               </v-btn>
-              <v-btn to="http://ch.linkedin.com/in/stijnvermeeren/" size="small" rounded="3" class="mx-2">
+              <v-btn href="http://ch.linkedin.com/in/stijnvermeeren/" size="small" rounded="3" class="mx-2">
                 <v-img src="/images/socialmedia/linkedin.png" width="18" class="mr-2" /> LinkedIn
               </v-btn>
             </infobox-line>
@@ -84,7 +84,7 @@
               <a href="https://tijdloze.rocks">tijdloze.rocks</a>,
               <nuxt-link to="/uetliberg">Uetliberg Trampelpfade</nuxt-link>,
               <nuxt-link to="/swisshikes">mijn wandelingen in Zwitserland</nuxt-link>.
-              <v-btn to="https://github.com/stijnvermeeren" size="small" rounded="3" class="mx-2">
+              <v-btn href="https://github.com/stijnvermeeren" size="small" rounded="3" class="mx-2">
                 <v-img src="/images/socialmedia/github.png" width="18" class="mr-2" /> Github
               </v-btn>
               <v-btn to="/projects" size="small" rounded="3" class="mx-2">
