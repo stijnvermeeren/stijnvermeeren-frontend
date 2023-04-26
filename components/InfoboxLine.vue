@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex my-2">
+  <div class="d-flex mt-2 mb-3">
     <div class="align-self-top">
       <v-img :src="`/images/icons/${icon}`" width="32" class="mr-3" />
     </div>
