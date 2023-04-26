@@ -1,5 +1,5 @@
 <template>
-  <img src="/images/stijn/stijn.jpg" alt="Photo of Stijn" class="foto" />
+  <v-img src="/images/stijn/stijn.jpg" alt="Photo of Stijn" class="float-right mx-3" style="max-width: 30%;" width="400" />
 
   <h2>About Stijn</h2>
 
@@ -37,11 +37,11 @@
 
   <h3>Hiker and mountaineer</h3>
 
-  <p>I was active in the <nuxt-link to="http://www.luuhc.com/">Leeds University Union Hiking Club</nuxt-link> from 2009 to 2013. Since moving to Switzerland, I head into the Alps as often as possible. I like to do challenging alpine hikes and scambles, as well as via ferrata. I am also trying to get more experience in mountaineering and ski touring. I write detailed <nuxt-link to="http://Stijn.hikr.org/">reports on Hikr</nuxt-link> for many of my hikes.</p>
+  <p>I was active in the <nuxt-link to="http://www.luuhc.com/">Leeds University Union Hiking Club</nuxt-link> from 2009 to 2013. Since moving to Switzerland, I head into the Alps as often as possible. I like to do challenging alpine hikes and scambles, as well as via ferrata. I am also trying to get more experience in mountaineering and ski touring. I used to write detailed <nuxt-link to="http://Stijn.hikr.org/">reports on Hikr</nuxt-link> for many of my hikes.</p>
 
   <h3>Go player</h3>
 
-  <p>I have been studying and playing the board game of <nuxt-link to="https://online-go.com/learn-to-play-go">Go</nuxt-link> since 2010. After participating in my first official tournament in 2016, I'm now <nuxt-link to="http://www.europeangodatabase.eu/EGD/Player_Card.php?&key=18074815">officially ranked</nuxt-link> as a 2 yku (EGF). Every once in a while, I show up at the <nuxt-link to="http://http://zurich.swissgo.org/">Zürich Go Club</nuxt-link>.</p>
+  <p>I have been studying and playing the board game of <nuxt-link to="https://online-go.com/learn-to-play-go">Go</nuxt-link> since 2010. After participating in my first official tournament in 2016, I'm now <nuxt-link to="http://www.europeangodatabase.eu/EGD/Player_Card.php?&key=18074815">officially ranked</nuxt-link> as a 2 yku (EGF).</p>
 
   <h3>Profiles on the internet</h3>
 
@@ -49,6 +49,7 @@
     <ul class="list-unstyled">
       <li><social-link link="http://ch.linkedin.com/in/stijnvermeeren/" title="LinkedIn" image="linkedin.png" /></li>
       <li><social-link link="https://www.xing.com/profile/Stijn_Vermeeren" title="XING" image="XING.png" /></li>
+      <li><social-link link="https://github.com/stijnvermeeren" title="Github" image="github.png" /></li>
       <li><social-link link="http://www.facebook.com/stijnvermeeren" title="Facebook" image="facebook.png" /></li>
       <li><social-link link="http://www.icheckmovies.com/profiles/stijnvermeeren/" title="iCheckMovies" image="icheckmovies.png" /></li>
       <li><social-link link="http://www.hikr.org/user/Stijn" title="Hikr" image="hikr.png" /></li>

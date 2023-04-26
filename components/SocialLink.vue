@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="link" :title="`Stijn @ ${title}`">
-    <img :src="`/images/socialmedia/${image}`" :alt="`${title} logo`">
+    <img width="24" :src="`/images/socialmedia/${image}`" :alt="`${title} logo`" />
     <span v-if="!noContent">{{ title }}</span>
   </nuxt-link>
 </template>

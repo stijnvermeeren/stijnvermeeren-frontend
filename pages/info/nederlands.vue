@@ -1,5 +1,5 @@
 <template>
-  <img src="/images/stijn/stijn.jpg" alt="Foto van Stijn" class="foto" />
+  <v-img src="/images/stijn/stijn.jpg" alt="Foto van Stijn" class="float-right mx-3" style="max-width: 30%;" width="400" />
 
   <h2>Over Stijn</h2>
 
@@ -30,11 +30,11 @@
 
   <h3>Bergwandelaar en alpinist</h3>
 
-  <p>Ik was een actief lid van de <nuxt-link to="http://www.luuhc.com/">Leeds University Union Hiking Club</nuxt-link> van 2009 tot 2013. Sinds ik in Zwitserland woon, ben ik zoveel mogelijk in de Alpen onderweg. Ik hou van uitdagende alpine wandeltochten met eenvoudige klimpassages en van via ferrata. Ik probeer ook meer ervaring te verzamelen met bergbeklimmen en skitoeren. Ik schrijf gedetailleerde <nuxt-link to="http://Stijn.hikr.org/">berichten op Hikr</nuxt-link> over veel van mijn bergtochten.</p>
+  <p>Ik was een actief lid van de <nuxt-link to="http://www.luuhc.com/">Leeds University Union Hiking Club</nuxt-link> van 2009 tot 2013. Sinds ik in Zwitserland woon, ben ik zoveel mogelijk in de Alpen onderweg. Ik hou van uitdagende alpine wandeltochten met eenvoudige klimpassages en van via ferrata. Ik probeer ook meer ervaring te verzamelen met bergbeklimmen en skitoeren. Ik schreef lange tijd gedetailleerde <nuxt-link to="http://Stijn.hikr.org/">berichten op Hikr</nuxt-link> over veel van mijn bergtochten.</p>
 
   <h3>Go-speler</h3>
 
-  <p>Ik speel en bestudeer het bordspel <nuxt-link to="https://online-go.com/learn-to-play-go">Go</nuxt-link> sinds 2010. In 2016 nam ik voor het eerst deel in een officieel toernooi. Nu heb ik een <nuxt-link to="http://www.europeangodatabase.eu/EGD/Player_Card.php?&key=18074815">EGF-rating</nuxt-link> van 2-kyu. Af en toe ga ik naar de <nuxt-link to="http://http://zurich.swissgo.org/">Zürich Go Club</nuxt-link>.</p>
+  <p>Ik speel en bestudeer het bordspel <nuxt-link to="https://online-go.com/learn-to-play-go">Go</nuxt-link> sinds 2010. In 2016 nam ik voor het eerst deel in een officieel toernooi. Nu heb ik een <nuxt-link to="http://www.europeangodatabase.eu/EGD/Player_Card.php?&key=18074815">EGF-rating</nuxt-link> van 2-kyu.</p>
 
   <h3>Profielen op het internet</h3>
 
@@ -42,6 +42,7 @@
     <ul class="list-unstyled">
       <li><social-link link="http://ch.linkedin.com/in/stijnvermeeren/" title="LinkedIn" image="linkedin.png" /></li>
       <li><social-link link="https://www.xing.com/profile/Stijn_Vermeeren" title="XING" image="XING.png" /></li>
+      <li><social-link link="https://github.com/stijnvermeeren" title="Github" image="github.png" /></li>
       <li><social-link link="http://www.facebook.com/stijnvermeeren" title="Facebook" image="facebook.png" /></li>
       <li><social-link link="http://www.icheckmovies.com/profiles/stijnvermeeren/" title="iCheckMovies" image="icheckmovies.png" /></li>
       <li><social-link link="http://www.hikr.org/user/Stijn" title="Hikr" image="hikr.png" /></li>

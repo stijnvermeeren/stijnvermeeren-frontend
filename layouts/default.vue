@@ -25,7 +25,7 @@
     </div>
     <div class="row">
       <div class="col attribution">
-        Favicon created by <a href="https://www.flaticon.com/free-icons/sea-lion" title="sea lion icons">Vectors Market - Flaticon</a>
+        Icons from <a href="https://www.flaticon.com/">Flaticon</a>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
   const route = useRoute()
 
   const menu = [
-      {link: '/blog', title: 'HOME'},
+      {link: '/', title: 'HOME'},
       {link: '/info', title: 'INFO'},
       {link: '/projects', title: 'PROJECTS'},
       {link: '/contact', title: 'CONTACT'}
@@ -51,7 +51,7 @@
     text-align: center;
     font-size: 80%;
     color: #bbb;
-    margin-top: 20px;
+    margin-top: 60px;
   }
   div.attribution a {
     color: #bbb !important;
@@ -62,6 +62,11 @@
     text-decoration: underline;
     transition: 0.5s all ease !important;
   }
+  div.content a.v-btn {
+    color: inherit;
+    text-decoration: none;
+  }
+
   a:hover {
     color: #00aeff;
   }
@@ -331,13 +336,5 @@
     top: 0;
     bottom: 0;
     width: 100%;
-  }
-
-  ul.uetlibergLegend img {
-    float: left;
-    margin: 5px;
-  }
-  ul.uetlibergLegend li {
-    clear: both;
   }
 </style>

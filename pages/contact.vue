@@ -7,7 +7,7 @@
   <div v-else>
     <p>I always appreciate receiving a message :). If you include your own email address, then I will be able to get in touch with you.</p>
 
-    <div class="contactForm">
+    <div>
       <div v-if="errors.length" class="alert alert-warning">
         <ul>
           <li v-for="error in errors">{{ error }}</li>
@@ -16,16 +16,24 @@
       <div class="d-none">
         Leave this field empty: <input v-model="subject" type="text" name="subject" />
       </div>
-      <div>
-        <input v-model="name" type="text" placeholder="Your name" />
-        <input v-model="email" type="text" placeholder="Your email address" />
-      </div>
-      <div>
-        <textarea v-model="message" rows="10" cols="50" placeholder="Your message"></textarea>
-      </div>
-      <div>
-        <button type="submit" @click="send()">Send</button>
-      </div>
+      <v-row :dense="true">
+        <v-col cols="12" sm="6">
+          <v-text-field v-model="name" label="Your name" />
+        </v-col>
+        <v-col cols="12" sm="6">
+          <v-text-field v-model="email" label="Your email address" />
+        </v-col>
+      </v-row>
+      <v-row :dense="true">
+        <v-col>
+          <v-textarea v-model="message" rows="8" label="Your message"></v-textarea>
+        </v-col>
+      </v-row>
+      <v-row :dense="true">
+        <v-col>
+          <v-btn @click="send()">Send</v-btn>
+        </v-col>
+      </v-row>
     </div>
   </div>
 </template>
@@ -65,18 +73,3 @@ definePageMeta({
   activeMenuLink: '/contact'
 })
 </script>
-
-<style scoped>
-  div.contactForm input, div.contactForm button {
-    padding: 0.2em;
-    margin: 0.2em 1%;
-  }
-  div.contactForm input[type='text'] {
-    width: 38.8%;
-  }
-  div.contactForm textarea {
-    width: 80%;
-    padding: 0.2em;
-    margin: 0.2em 1%;
-  }
-</style>

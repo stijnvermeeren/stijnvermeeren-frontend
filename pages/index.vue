@@ -1,0 +1,141 @@
+<template>
+  <v-row class="mt-2">
+    <v-col>
+      <v-expansion-panels v-model="selectedLanguage">
+        <v-expansion-panel :eager="true" rounded="3" value="en">
+          <v-expansion-panel-title class="font-weight-bold" v-slot="{ expanded }">
+            <v-row>
+              <v-col>
+                <div>
+                  My name is Stijn Vermeeren.
+                  <v-btn v-if="expanded" to="/myname" variant="tonal" size="x-small" rounded="3" class="mx-2">
+                    How to pronounce
+                  </v-btn>
+                </div>
+              </v-col>
+            </v-row>
+          </v-expansion-panel-title>
+          <v-expansion-panel-text>
+            <v-img width="150" style="max-width: 30%;" src="/images/stijn/stijn.jpg" class="float-right" />
+            <infobox-line icon="switzerland.png">
+              <stijn-age /> year old Belgian living in Zurich, Switzerland.
+              <v-btn to="/contact" size="small" rounded="3" class="mx-2">
+                <v-img src="/images/icons/email.png" width="18" class="mr-2" /> Contact
+              </v-btn>
+              <v-btn to="/info" size="small" rounded="3" class="mx-2">
+                More about me
+              </v-btn>
+            </infobox-line>
+            <infobox-line icon="education.png">
+              PhD in <nuxt-link to="/mathematics">Mathematics</nuxt-link> with degrees from Leeds, Cambridge and Leuven.
+            </infobox-line>
+            <infobox-line icon="workplace.png">
+              9 years of professional experience as data science team lead.
+              <v-btn to="/files/cv/CV-Stijn_Vermeeren.pdf" size="small" rounded="3" class="mx-2">
+                <v-img src="/images/icons/cv.png" width="18" class="mr-2" /> my CV
+              </v-btn>
+              <v-btn to="http://ch.linkedin.com/in/stijnvermeeren/" size="small" rounded="3" class="mx-2">
+                <v-img src="/images/socialmedia/linkedin.png" width="18" class="mr-2" /> LinkedIn
+              </v-btn>
+            </infobox-line>
+            <infobox-line icon="projects.png">
+              Notable projects:
+              <a href="https://tijdloze.rocks">tijdloze.rocks</a>,
+              <nuxt-link to="/uetliberg">Uetliberg Trampelpfade</nuxt-link>,
+              <nuxt-link to="/swisshikes">my hikes in Switzerland</nuxt-link>.
+              <v-btn to="https://github.com/stijnvermeeren" size="small" rounded="3" class="mx-2">
+                <v-img src="/images/socialmedia/github.png" width="18" class="mr-2" /> Github
+              </v-btn>
+              <v-btn to="/projects" size="small" rounded="3" class="mx-2">
+                More projects
+              </v-btn>
+            </infobox-line>
+          </v-expansion-panel-text>
+        </v-expansion-panel>
+        <v-expansion-panel :eager="true" rounded="3">
+          <v-expansion-panel-title class="font-weight-bold">
+            Mijn naam is Stijn Vermeeren.
+          </v-expansion-panel-title>
+          <v-expansion-panel-text>
+            <v-img width="150" style="max-width: 30%;" src="/images/stijn/stijn.jpg" class="float-right" />
+            <infobox-line icon="switzerland.png">
+              <stijn-age /> jaar oude Vlaming die in Zürich, Zwitserland woont.
+              <v-btn to="/contact" size="small" rounded="3" class="mx-2">
+                <v-img src="/images/icons/email.png" width="18" class="mr-2" /> Contacteer mij
+              </v-btn>
+              <v-btn to="/nederlands" size="small" rounded="3" class="mx-2">
+                Meer over mij
+              </v-btn>
+            </infobox-line>
+            <infobox-line icon="education.png">
+              Doctor in de <nuxt-link to="/wiskunde">wiskunde</nuxt-link> met diplomas van de universiteiten van Leeds, Cambridge en Leuven.
+            </infobox-line>
+            <infobox-line icon="workplace.png">
+              9 jaren professionele ervaring als teamleider data science.
+              <v-btn to="/files/cv/CV-Stijn_Vermeeren.pdf" size="small" rounded="3" class="mx-2">
+                <v-img src="/images/icons/cv.png" width="18" class="mr-2" /> mijn CV (Engels)
+              </v-btn>
+              <v-btn to="http://ch.linkedin.com/in/stijnvermeeren/" size="small" rounded="3" class="mx-2">
+                <v-img src="/images/socialmedia/linkedin.png" width="18" class="mr-2" /> LinkedIn
+              </v-btn>
+            </infobox-line>
+            <infobox-line icon="projects.png">
+              Belangrijke projecten:
+              <a href="https://tijdloze.rocks">tijdloze.rocks</a>,
+              <nuxt-link to="/uetliberg">Uetliberg Trampelpfade</nuxt-link>,
+              <nuxt-link to="/swisshikes">mijn wandelingen in Zwitserland</nuxt-link>.
+              <v-btn to="https://github.com/stijnvermeeren" size="small" rounded="3" class="mx-2">
+                <v-img src="/images/socialmedia/github.png" width="18" class="mr-2" /> Github
+              </v-btn>
+              <v-btn to="/projects" size="small" rounded="3" class="mx-2">
+                Meer projecten
+              </v-btn>
+            </infobox-line>
+          </v-expansion-panel-text>
+        </v-expansion-panel>
+      </v-expansion-panels>
+
+      <h4 class="mt-5">
+        Nieuwste fotoalbums
+        <v-btn to="/fotoalbums" size="small" rounded="3" class="ml-2">
+          Alle fotoalbums
+        </v-btn>
+      </h4>
+      <v-slide-group show-arrows>
+        <v-slide-group-item v-for="item in data" :key="item.link_url">
+          <v-card :href="item.link" max-width="280" rounded="3" flat>
+            <v-card-item class="px-1">
+              <v-img v-if="item.thumbnail_image" :src="item.thumbnail_image" width="280" height="180" cover :alt="item.title" :title="item.title" />
+              <v-card-title>{{ item.title }}</v-card-title>
+              <v-card-subtitle>{{ item.time_range }}</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-slide-group-item>
+      </v-slide-group>
+    </v-col>
+  </v-row>
+</template>
+
+<script setup>
+import InfoboxLine from "~/components/InfoboxLine.vue";
+
+const { data } = await useApiFetch('/foto/home-api');
+
+definePageMeta({
+    activeMenuLink: '/'
+})
+
+const selectedLanguage = ref('en')
+</script>
+
+<style scoped>
+div.content a.v-card {
+    color: inherit;
+    text-decoration: none;
+}
+
+.v-card-subtitle {
+    font-size: 80%;
+    letter-spacing: -0.2px;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <div v-if="data" class="row">
-    <div class="col-xs-12 col-lg-9">
+    <div class="col">
       <div class="content-grid clearfix">
         <div v-if="page > 1">
           <div v-if="data.previousPage" class="stream-previous">
@@ -26,47 +26,6 @@
         <div style="clear: both;"></div>
       </div>
     </div>
-    <div class="col-lg-3 visible-lg side-bar">
-      <h3>I'm Stijn Vermeeren.</h3>
-      <ul>
-        <li>Belgian in Zürich.</li>
-        <li>Data Scientist and Scala Software Engineer (<nuxt-link to="/files/cv/CV-Stijn_Vermeeren.pdf">view CV</nuxt-link>).</li>
-        <li>Mathematician.</li>
-        <li>Polyglot.</li>
-        <li>Hiker and mountaineer.</li>
-        <li>2-kyu go player.</li>
-      </ul>
-      <p>
-        <nuxt-link to="info">More about me</nuxt-link>.<br />
-        <nuxt-link to="myname">How to pronounce my name</nuxt-link>.
-      </p>
-  
-      <h3>Ik ben Stijn Vermeeren.</h3>
-      <ul>
-        <li>Vlaming in Zürich.</li>
-        <li>Data scientist en Scala softwareontwikkelaar.</li>
-        <li>Wiskundige.</li>
-        <li>Polyglot.</li>
-        <li>Bergwandelaar en alpinist.</li>
-        <li>2-kyu go-speler.</li>
-      </ul>
-      <p>
-        <nuxt-link to="info/nederlands">Meer over mij</nuxt-link>.
-      </p>
-  
-      <div class="side-bar-profiles">
-        <div><social-link link="http://ch.linkedin.com/in/stijnvermeeren/" title="LinkedIn" image="linkedin.png" no-content /></div>
-        <div><social-link link="https://www.xing.com/profile/Stijn_Vermeeren" title="XING" image="XING.png" no-content /></div>
-        <div><social-link link="http://www.facebook.com/stijnvermeeren" title="Facebook" image="facebook.png" no-content /></div>
-        <div><social-link link="http://www.icheckmovies.com/profiles/stijnvermeeren/" title="iCheckMovies" image="icheckmovies.png" no-content /></div>
-      </div>
-      <div class="side-bar-profiles">
-        <div><social-link link="http://www.hikr.org/user/Stijn" title="Hikr" image="hikr.png" no-content /></div>
-        <div><social-link link="http://duolingo.com/#/stijnvermeeren" title="Duolingo" image="duolingo.png" no-content /></div>
-        <div><social-link link="https://lichess.org/@/stijnvermeeren" title="Lichess" image="lichess.png" no-content /></div>
-        <div><social-link link="https://my.flightradar24.com/stijnvermeeren" title="myFlightradar24" image="myflightradar24.png" no-content /></div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -87,11 +46,6 @@
 
   useMeta({
     title: 'Blog'
-  })
-
-  definePageMeta({
-    alias: ['/'],
-    activeMenuLink: '/blog'
   })
 </script>
 

@@ -65,3 +65,13 @@ definePageMeta({
   activeMenuLink: '/projects'
 })
 </script>
+
+<style scoped>
+ul.uetlibergLegend img {
+  float: left;
+  margin: 5px;
+}
+ul.uetlibergLegend li {
+  clear: both;
+}
+</style>
