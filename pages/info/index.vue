@@ -18,7 +18,7 @@
 
   <p>I have a Bachelor in Mathematics from the <nuxt-link to="http://www.kuleuven.be/">Katholieke Universiteit Leuven</nuxt-link>, a <nuxt-link to="http://www.maths.cam.ac.uk/postgrad/casm/">Certificate of Advanced Study in Mathematics</nuxt-link> (<em>Part III</em>) from the University of Cambridge and a PhD in Mathematical Logic from the <nuxt-link to="http://www.maths.leeds.ac.uk/pure/logic/group.html">University of Leeds</nuxt-link>. On the <nuxt-link to="mathematics">mathematics page</nuxt-link> you can find more information on my research.</p>
 
-  <p>In 2015, I won a First Prize at the <nuxt-link to="https://www.vwo.be">Vlaamse Wiskunde Olympiade</nuxt-link> and a Honourable Mention at the <nuxt-link to="http://www.imo-official.org/participant_r.aspx?id=8605">International Mathematical Olympiad in Mexico</nuxt-link>. I still enjoy different kinds of problem solving competitions such as <nuxt-link to="http://www.research.ibm.com/ponder/">IBM Ponder This</nuxt-link> and the <nuxt-link to="https://www.aivd.nl/publicaties/publicaties/2016/12/12/kerstpuzzel-2016">NBV Kerstpuzzel</nuxt-link>.</p>
+  <p>In 2005, I won a First Prize at the <nuxt-link to="https://www.vwo.be">Vlaamse Wiskunde Olympiade</nuxt-link> and a Honourable Mention at the <nuxt-link to="http://www.imo-official.org/participant_r.aspx?id=8605">International Mathematical Olympiad in Mexico</nuxt-link>. I still enjoy different kinds of problem solving competitions such as <nuxt-link to="http://www.research.ibm.com/ponder/">IBM Ponder This</nuxt-link> and the <nuxt-link to="https://www.aivd.nl/publicaties/publicaties/2016/12/12/kerstpuzzel-2016">NBV Kerstpuzzel</nuxt-link>.</p>
 
   <h3>Polyglot</h3>
 
