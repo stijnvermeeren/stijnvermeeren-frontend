@@ -4,20 +4,18 @@
       <h2>Fotoalbums</h2>
     </v-col>
     <v-col>
-      <v-no-ssr><!-- https://github.com/vuetifyjs/vuetify/issues/15882 -->
-        <v-sheet max-width="400" class="ml-auto">
-          <v-autocomplete
-              v-model="countryFilter"
-              :items="countries"
-              item-title="name"
-              item-value="code"
-              clearable
-              persistent-clear
-              density="compact"
-              label="Filter op land"
-          />
-        </v-sheet>
-      </v-no-ssr>
+      <v-sheet max-width="400" class="ml-auto">
+        <v-autocomplete
+            v-model="countryFilter"
+            :items="countries"
+            item-title="name"
+            item-value="code"
+            clearable
+            persistent-clear
+            density="compact"
+            label="Filter op land"
+        />
+      </v-sheet>
     </v-col>
   </v-row>
   <ul v-if="visibleAlbums.length" class="albums_list">
