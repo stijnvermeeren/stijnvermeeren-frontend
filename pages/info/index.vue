@@ -28,7 +28,7 @@
       Speciaal voor de Nederlandstaligen heb ik een <nuxt-link to="bio">(ludieke) biografie</nuxt-link> geschreven.
     </li>
     <li>As you have already noticed, I speak <strong>English</strong>.</li>
-    <li lang="de">Ich spreche auch <strong><nuxt-link to="info/deutsch">Deutsch</nuxt-link></strong> (und au es bitzeli Mundart).</li>
+    <li lang="de">Ich spreche auch <strong><nuxt-link to="info/deutsch">Deutsch</nuxt-link></strong> (und o e chli Schwizerdütsch).</li>
     <li lang="it">Ciao! Parlo <strong><nuxt-link to="info/italiano">italiano</nuxt-link></strong>.</li>
     <li lang="es">Estoy aprendiendo <strong><nuxt-link to="info/espanol">español</nuxt-link></strong>.</li>
     <li lang="no">Jeg snakker <strong><nuxt-link to="info/norsk">norsk</nuxt-link></strong>.</li>
