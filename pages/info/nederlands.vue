@@ -21,7 +21,7 @@
   <ul>
     <li>Mijn moedertaal is <strong>Nederlands</strong>.</li>
     <li lang="en">I speak <strong><nuxt-link to="/info">English</nuxt-link></strong> fluently.</li>
-    <li lang="de">Ich spreche auch <strong><nuxt-link to="/info/deutsch">Deutsch</nuxt-link></strong> (und au es bitzeli Mundart).</li>
+    <li lang="de">Ich spreche auch <strong><nuxt-link to="/info/deutsch">Deutsch</nuxt-link></strong> (und o e chli Schwizerdütsch).</li>
     <li lang="it">Ciao! Parlo <strong><nuxt-link to="/info/italiano">italiano</nuxt-link></strong>.</li>
     <li lang="es">Estoy aprendiendo <strong><nuxt-link to="/info/espanol">español</nuxt-link></strong>.</li>
     <li lang="no">Jeg snakker <strong><nuxt-link to="/info/norsk">norsk</nuxt-link></strong>.</li>
