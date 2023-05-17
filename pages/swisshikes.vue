@@ -5,16 +5,14 @@
 
   <p>This visualisation is fairly complete, but excludes all trips on my "Hausberg" (the Uetliberg), since I have been there way too often.</p>
 
-  <p>Last update: {{data.lastUpdate}}.</p>
+  <p>Latest hike included on the map: {{dateString}}.</p>
 
-  <p><nuxt-link to="https://map.geo.admin.ch/?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2013.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2014.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2015.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2016.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2017.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2018.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2019.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2020.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2021.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2022.kml&layers_visibility=false,false,false,false,true,true,true,true,true&layers_timestamp=18641231,,,,,,,,&X=193959.31&Y=718914.62&zoom=2">View on map.geo.admin.ch</nuxt-link> for more map options.</p>
+  <p><nuxt-link :to="`https://map.geo.admin.ch/${urlParams}`">View on map.geo.admin.ch</nuxt-link> for more map options.</p>
 
-  <iframe src="https://map.geo.admin.ch/embed.html?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2013.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2014.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2015.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2016.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2017.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2018.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2019.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2020.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2021.kml,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fswisshikes%2F2022.kml&layers_visibility=false,false,false,false,true,true,true,true,true&layers_timestamp=18641231,,,,,,,,&X=178499.31&Y=668104.62&zoom=1" width="100%" height="600" frameborder='0' style="border:0"></iframe>
+  <iframe :src="`https://map.geo.admin.ch/embed.html${urlParams}`" width="100%" height="600" frameborder='0' style="border:0"></iframe>
 </template>
 
 <script setup>
-import {useApiFetch} from "../composables/useApiFetch";
-
 useHead({
   title: 'My hikes in Switzerland'
 })
@@ -23,5 +21,32 @@ definePageMeta({
   activeMenuLink: '/projects'
 })
 
-const { data } = await useApiFetch('/projects/swisshikes-api');
+const { data } = await useFetch('https://swisshikes-kml-f28ddd4.s3.eu-central-1.amazonaws.com/metadata.json');
+
+const bucketUrl = "https://swisshikes-kml-f28ddd4.s3.eu-central-1.amazonaws.com/"
+
+const urlParams = computed(() => {
+  const joined = data.value.files.map(file => encodeURIComponent(`KML||${bucketUrl}${file}`)).join(",")
+  return `?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,${joined}&layers_visibility=false,false,false&layers_timestamp=18641231,,,,,,,,&X=178499.31&Y=668104.62&zoom=1`
+})
+
+const nth = function(d) {
+  const dString = String(d);
+  const last = +dString.slice(-2);
+  if (last > 3 && last < 21) return 'th';
+  switch (last % 10) {
+    case 1:  return "st";
+    case 2:  return "nd";
+    case 3:  return "rd";
+    default: return "th";
+  }
+}
+
+const dateString = computed(() => {
+  let d = new Date(data.value.latestDate);
+  let day = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(d);
+  let month = new Intl.DateTimeFormat('en', { month: 'long' }).format(d);
+  let year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
+  return `${day}${nth(day)} of ${month} ${year}`
+})
 </script>
