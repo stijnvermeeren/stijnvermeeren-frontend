@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-export interface StreamItem {
+interface StreamItem {
     description?: string,
     link_description?: string,
     link_url?: string,

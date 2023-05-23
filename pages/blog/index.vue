@@ -30,12 +30,19 @@
 </template>
 
 <script setup lang="ts">
-  import {StreamItem} from "~/components/StreamItem.vue";
-
   const route = useRoute();
   const router = useRouter();
   const page = ref(parseInt(route.query.page as string) || 1)
 
+  interface StreamItem {
+      description?: string,
+      link_description?: string,
+      link_url?: string,
+      link_title?: string,
+      link_image?: string,
+      link_domain?: string
+      link_image_is_large?: boolean
+  }
   interface StreamPerDay {
       date: string,
       items: Array<StreamItem>
