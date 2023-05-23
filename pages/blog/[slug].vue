@@ -22,12 +22,12 @@ useMeta({
 </script>
 
 <style scoped>
-div.blogPost blockquote, blockquote.citaat {
+div.blogPost blockquote {
   margin-left: 3em;
   margin-right: 3em;
   font-size: 90%;
 }
-div.blogPost blockquote p, blockquote.citaat p {
+div.blogPost blockquote p {
   text-indent: 1em;
   margin: 0.2em 0;
 }

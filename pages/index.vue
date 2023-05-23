@@ -95,12 +95,12 @@
         </v-window-item>
       </v-window>
 
-      <h4 class="mt-5">
+      <h3 class="mt-5">
         Nieuwste fotoalbums
         <v-btn to="/fotoalbums" size="small" rounded="3" class="ml-2">
           Alle fotoalbums
         </v-btn>
-      </h4>
+      </h3>
       <v-slide-group show-arrows>
         <v-slide-group-item v-for="item in data" :key="item.link">
           <v-card :href="item.link" max-width="280" rounded="3" flat>

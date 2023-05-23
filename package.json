@@ -15,7 +15,6 @@
     "vue-tsc": "^1.6.5"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3",
     "iv-viewer": "^2.0.1",
     "pannellum": "^2.5.6",
     "photoswipe": "^5.3.7",
