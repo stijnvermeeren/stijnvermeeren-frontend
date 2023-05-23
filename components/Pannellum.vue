@@ -3,15 +3,20 @@
 </template>
 
 <script setup lang="ts">
-import Pannellum from 'pannellum';
+import 'pannellum';
 import 'pannellum/build/pannellum.css';
+
+interface CustomWindow extends Window {
+    pannellum?: any;
+}
+declare const window: CustomWindow;
+
 
 const {image} = defineProps<{
   image: string
 }>()
-
 onMounted(() => {
-  Pannellum.viewer('sphere', {
+  window.pannellum.viewer('sphere', {
     "type": "equirectangular",
     "panorama": `https://s3.eu-central-1.amazonaws.com/fotos.stijnvermeeren.be/sphere/${image}.jpg`,
     "autoLoad": true,
