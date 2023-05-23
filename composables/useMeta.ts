@@ -1,4 +1,11 @@
-export const useMeta = (opts) => {
+interface OptsType {
+    title?: string,
+    description?: string,
+    image?: string,
+    lang?: string
+}
+
+export const useMeta = (opts: OptsType) => {
     if (opts.title) {
         useHead({
             title: opts.title

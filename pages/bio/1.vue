@@ -34,9 +34,7 @@
   <p><nuxt-link to="/bio/2">Vervolg...</nuxt-link></p>
 </template>
 
-<script setup>
-import BioContents from "../../components/BioContents";
-
+<script setup lang="ts">
 useMeta({
   lang: 'nl'
 })

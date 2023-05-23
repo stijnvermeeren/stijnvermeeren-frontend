@@ -8,10 +8,10 @@
   </p>
 </template>
 
-<script setup>
-const { currentPage } = defineProps({
-  currentPage: Number
-})
+<script setup lang="ts">
+const { currentPage } = defineProps<{
+  currentPage: number
+}>()
 
 const pageCount = 7
 const pages = Array.from(Array(pageCount).keys(),(_, i) => i + 1)

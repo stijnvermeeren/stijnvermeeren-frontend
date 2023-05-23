@@ -2,8 +2,8 @@
   <image-viewer :image="image" />
 </template>
 
-<script setup>
-const image = useRoute().params.image;
+<script setup lang="ts">
+const image = useRoute().params.image as string;
 
 definePageMeta({
   layout: "standalone",

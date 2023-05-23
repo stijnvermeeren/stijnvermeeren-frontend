@@ -16,8 +16,17 @@
   </div>
 </template>
 
-<script setup>
-const {item} = defineProps({ item: Object })
+<script setup lang="ts">
+export interface StreamItem {
+    description?: string,
+    link_description?: string,
+    link_url?: string,
+    link_title?: string,
+    link_image?: string,
+    link_domain?: string
+    link_image_is_large?: boolean
+}
+const {item} = defineProps<{ item: StreamItem }>()
 </script>
 
 <style scoped>

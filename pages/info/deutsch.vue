@@ -13,7 +13,7 @@
   <p>Mein Bruder <nuxt-link to="https://matsvermeeren.xyz/">Mats hat in Berlin promoviert</nuxt-link>.</p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'Über Stijn',
   lang: 'de'

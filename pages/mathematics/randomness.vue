@@ -25,7 +25,7 @@
   </ul>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'Algorithmic randomness'
 })

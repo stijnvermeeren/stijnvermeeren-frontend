@@ -32,8 +32,16 @@
   <p v-else>Geen fotoalbum's gevonden.</p>
 </template>
 
-<script setup>
-const { data: albums } = await useApiFetch('/foto/api')
+<script setup lang="ts">
+interface Album {
+    link: string,
+    title: string,
+    time_range: string,
+    country_codes: Array<string>,
+    thumbnail_link?: string,
+    thumbnail_title?: string
+}
+const { data: albums }: { data: Ref<Array<Album>> } = await useApiFetch('/foto/api')
 
 const countries = [
     { code: 'ar', name: 'Argentinië' },
@@ -73,11 +81,12 @@ const countries = [
     { code: 'ch', name: 'Zwitserland' },
 ]
 
-const countryFilter = ref(undefined)
+const countryFilter = ref<string | undefined>(undefined)
 
 const visibleAlbums = computed(() => {
-    if (countryFilter.value) {
-        return albums.value.filter(album => album.country_codes.includes(countryFilter.value))
+    const filterValue = countryFilter.value
+    if (filterValue) {
+        return albums.value.filter(album => album.country_codes.includes(filterValue))
     } else {
         return albums.value
     }

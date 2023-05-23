@@ -102,7 +102,7 @@
         </v-btn>
       </h4>
       <v-slide-group show-arrows>
-        <v-slide-group-item v-for="item in data" :key="item.link_url">
+        <v-slide-group-item v-for="item in data" :key="item.link">
           <v-card :href="item.link" max-width="280" rounded="3" flat>
             <v-card-item class="px-1">
               <v-img v-if="item.thumbnail_image" :src="item.thumbnail_image" width="280" height="180" cover :alt="item.title" :title="item.title" />
@@ -116,16 +116,22 @@
   </v-row>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import InfoboxLine from "~/components/InfoboxLine.vue";
 
-const { data } = await useApiFetch('/foto/home-api');
+interface ResponseItemType {
+  title: string,
+  link: string,
+  time_range: string,
+  thumbnail_image?: string
+}
+const { data }: { data: Ref<Array<ResponseItemType>> } = await useApiFetch('/foto/home-api');
 
 definePageMeta({
     activeMenuLink: '/'
 })
 
-const selectedLanguage = ref(null)
+const selectedLanguage = ref<string | undefined>(undefined)
 </script>
 
 <style scoped>

@@ -9,10 +9,10 @@
   </div>
 </template>
 
-<script setup>
-const { currentPage } = defineProps({
-  icon: String
-})
+<script setup lang="ts">
+const { icon } = defineProps<{
+  icon: string
+}>()
 
 
 </script>

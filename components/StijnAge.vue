@@ -2,7 +2,7 @@
   <span>{{age}}</span>
 </template>
 
-<script setup>
+<script setup lang="ts">
 function getAge() {
   const today = new Date();
   const birthDate = new Date("1987-06-29");

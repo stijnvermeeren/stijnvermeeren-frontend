@@ -4,7 +4,7 @@
   </NuxtLayout>
 </template>
 
-<script setup>
+<script setup lang="ts">
   useHead({
     titleTemplate: (titleChunk) => {
       return titleChunk ? `Stijn Vermeeren: ${titleChunk}` : 'Stijn Vermeeren';
@@ -18,7 +18,7 @@
         rel: 'stylesheet',
         href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
         integrity: "sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65",
-        crossOrigin: "anonymous"
+        crossorigin: "anonymous"
       },
       {
         rel: 'icon',

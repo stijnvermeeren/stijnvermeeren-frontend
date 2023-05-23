@@ -22,7 +22,7 @@
   <p><nuxt-link to="/bio/3">Vervolg...</nuxt-link></p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   lang: 'nl'
 })

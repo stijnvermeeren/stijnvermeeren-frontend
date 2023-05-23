@@ -54,7 +54,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'Over Stijn',
   lang: 'nl'

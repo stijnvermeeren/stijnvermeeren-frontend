@@ -17,10 +17,10 @@
           <stream-item v-for="item in dayData.items" :item="item" />
         </div>
   
-        <div v-if="data.previousPage" class="stream-previous">
+        <div v-if="!!data.previousPage" class="stream-previous">
           <nuxt-link :to="{name: 'blog', query: { page: data.previousPage}}">Vorige pagina</nuxt-link>
         </div>
-        <div v-if="data.nextPage" class="stream-next">
+        <div v-if="!!data.nextPage" class="stream-next">
           <nuxt-link :to="{name: 'blog', query: { page: data.nextPage}}">Volgende pagina</nuxt-link>
         </div>
         <div style="clear: both;"></div>
@@ -29,14 +29,27 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+  import {StreamItem} from "~/components/StreamItem.vue";
+
   const route = useRoute();
   const router = useRouter();
-  const page = ref(route.query.page || 1)
-  const { data, refresh } = await useApiFetch('/stream-api', { query: { page: page } } );
+  const page = ref(parseInt(route.query.page as string) || 1)
+
+  interface StreamPerDay {
+      date: string,
+      items: Array<StreamItem>
+  }
+  interface StreamResponse {
+      previousPage?: number,
+      nextPage?: number
+      streamPerDay: Array<StreamPerDay>
+  }
+  const { data, refresh }: { data: Ref<StreamResponse>, refresh: any } =
+      await useApiFetch('/stream-api', { query: { page: page } } );
 
   watch(() => route.query.page, (newValue) => {
-    page.value = route.query.page
+    page.value = parseInt(route.query.page as string)
     refresh()
     router.push({
       path: '/blog',

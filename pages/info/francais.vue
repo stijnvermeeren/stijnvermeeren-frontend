@@ -12,7 +12,7 @@
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'Qui est Stijn?',
   lang: 'fr'

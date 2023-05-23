@@ -48,7 +48,7 @@
   <p><nuxt-link to="/bio">Terug naar het begin.</nuxt-link></p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   lang: 'nl'
 })

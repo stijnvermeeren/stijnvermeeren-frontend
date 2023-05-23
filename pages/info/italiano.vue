@@ -8,7 +8,7 @@
   <p>Sono matematico, lavorando come <em>Head of AI</em> per <nuxt-link to="http://www.starmind.com">Starmind</nuxt-link> a Zurigo. Ho ottenuto il dottorato nella <nuxt-link to="http://www.maths.leeds.ac.uk/pure/logic/group.html">logica matematica all'Università di Leeds</nuxt-link>. Prima, studiavo all'<nuxt-link to="http://www.kuleuven.be/">Università cattolico di Leuven</nuxt-link> (laurea triennale) e all'Università di Cambridge (<nuxt-link to="http://www.maths.cam.ac.uk/postgrad/casm/">Certificate of Advanced Study in Mathematics</nuxt-link>).</p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'A proposito di Stijn',
   lang: 'it'

@@ -1,4 +1,4 @@
-export const useApiUri = (request, opts) => {
+export const useApiUri: () => string = () => {
     const config = useRuntimeConfig()
 
     if (process.server) {

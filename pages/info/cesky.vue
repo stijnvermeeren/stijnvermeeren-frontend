@@ -11,7 +11,7 @@
   <p>Začal jsem se učit česky. Myslel jsem, že mluvím trochu česky. Cestoval jsem na Českou republiku. Nerozuměl jsem ani slovu. Sakra!</p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'O Stijnovi',
   lang: 'cs'

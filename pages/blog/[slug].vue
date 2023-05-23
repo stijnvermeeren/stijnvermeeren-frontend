@@ -6,9 +6,15 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const route = useRoute();
-const { data: post } = await useApiFetch(`/blog-api/${route.params.slug}`);
+
+interface Blog {
+    title: string,
+    contentHtml: string,
+    published: string
+}
+const { data: post }: { data: Ref<Blog> } = await useApiFetch(`/blog-api/${route.params.slug}`);
 
 useMeta({
   title: `Blog: ${post.value.title}`

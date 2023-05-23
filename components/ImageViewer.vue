@@ -6,15 +6,15 @@
   <div id="imageviewer"></div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {ImageViewer} from "iv-viewer";
 import 'iv-viewer/dist/iv-viewer.css';
 
-const {image} = defineProps({
-  image: String
-})
+const {image} = defineProps<{
+  image: string
+}>()
 
-let viewer;
+let viewer: ImageViewer | undefined;
 let zoom = 100;
 
 onMounted(() => {
@@ -24,11 +24,17 @@ onMounted(() => {
 });
 
 function zoomIn() {
-  viewer.zoom(viewer._state.zoomValue * 1.25)
+  const zoomValue = viewer?._state?.zoomValue
+  if (!!viewer && zoomValue) {
+    viewer.zoom(zoomValue * 1.25)
+  }
 }
 
 function zoomOut() {
-  viewer.zoom(viewer._state.zoomValue / 1.25)
+    const zoomValue = viewer?._state?.zoomValue
+    if (!!viewer && zoomValue) {
+        viewer.zoom(zoomValue / 1.25)
+    }
 }
 </script>
 

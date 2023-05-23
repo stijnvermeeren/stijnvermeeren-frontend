@@ -13,7 +13,7 @@
   <p>Estoy aprendiendo español. Puedo practicar español en Leeds, con unos amigos mexicanos.</p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'Sobre Stijn',
   lang: 'es'

@@ -62,7 +62,7 @@
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'About Stijn'
 })

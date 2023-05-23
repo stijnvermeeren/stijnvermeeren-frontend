@@ -28,7 +28,7 @@
   <p>There are also a few surnames that are closely related to <em>Vermeeren</em>. <em>Vermeersch</em> is quite common in West-Flanders. <em>Vermeiren</em> is a common name around Antwerp. <em>Vermeire</em> is common around Ghent and <em>Vermeir</em> is common near Dendermonde. In the Netherlands there are also about 3000 people named <em>Vermeer</em>, like the famous 17th century painter. You might also come across <em>Vermeren</em>, with a single <em>e</em> in the middle, but this is even more rare than <em>Vermeeren</em>.</p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'How to pronounce my name'
 })

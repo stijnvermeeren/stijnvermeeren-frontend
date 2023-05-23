@@ -40,17 +40,40 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import VueMarkdown from 'vue-markdown-render'
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import PhotoSwipeDynamicCaption from "photoswipe-dynamic-caption-plugin";
 import 'photoswipe/style.css';
+import PhotoSwipeDynamicCaption from "photoswipe-dynamic-caption-plugin";
 import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
 
 const route = useRoute();
-const { data: album } = await useApiFetch(`/fotoalbum-api/${route.params.slug}`);
+interface Photo {
+    title: string,
+    description: string,
+    link: string,
+    thumbnail_link: string,
+    location: string,
+    google_link: string,
+    datetime: string,
+    panorama: string,
+    panorama_link: string,
+    sphere: string,
+    sphere_link: string,
+    width: number,
+    height: number
+}
+interface Album {
+    title: string,
+    description: string,
+    time_range: string,
+    photos: Array<Photo>,
+    ogImage?: string
+}
+const { data: album }: { data: Ref<Album> } =
+    await useApiFetch(`/fotoalbum-api/${route.params.slug}`);
 
-let lightbox;
+let lightbox: typeof PhotoSwipeLightbox | undefined;
 
 onMounted(() => {
   if (!lightbox) {
@@ -69,7 +92,7 @@ onMounted(() => {
 });
 
 onUnmounted(() => {
-  if (lightbox) {
+  if (!!lightbox) {
     lightbox.destroy();
     lightbox = null;
   }

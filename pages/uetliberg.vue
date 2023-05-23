@@ -54,7 +54,7 @@
   <iframe src="https://map.geo.admin.ch/embed.html?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fuetliberg%2Ftrampelpfade2.kml,KML%7C%7Chttps:%2F%2Fstijnvermeeren.be%2Ffiles%2Fuetliberg%2Futo869.kml&layers_visibility=false,false,false,true,true&layers_timestamp=18641231,,,,&X=244290.14&Y=680271.70&zoom=6" width="100%" height="600" frameborder='0' style="border:0"></iframe>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'Trampelpfade am Uetliberg',
   description: 'An interactive map of the many fascinating and sometimes surprisingly challenging trails ("Trampelpfade") on the Uetliberg, the 870m tall hill rising above Zürich. Inspired by the detailed documentation of these trails by Martin "Uto869" on Hikr.',

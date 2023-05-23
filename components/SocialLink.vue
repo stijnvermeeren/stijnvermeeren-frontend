@@ -1,15 +1,14 @@
 <template>
   <nuxt-link :to="link" :title="`Stijn @ ${title}`">
     <img width="24" :src="`/images/socialmedia/${image}`" :alt="`${title} logo`" />
-    <span v-if="!noContent">{{ title }}</span>
+    <span>{{ title }}</span>
   </nuxt-link>
 </template>
 
-<script setup>
-const props = defineProps({
-  link: String,
-  title: String,
-  image: String,
-  noContent: Boolean
-});
+<script setup lang="ts">
+const props = defineProps<{
+  link: string,
+  title: string,
+  image: string
+}>();
 </script>

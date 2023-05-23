@@ -23,7 +23,7 @@
 </template>
 
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   lang: 'nl'
 })

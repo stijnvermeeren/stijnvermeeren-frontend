@@ -10,7 +10,7 @@
   <p>Jeg vil gerne møte folk til å øve norsk mit, så vennligst <nuxt-link to="contact">skriv meg en beskjed</nuxt-link> på norks!</p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useMeta({
   title: 'Om Stijn',
   lang: 'no'

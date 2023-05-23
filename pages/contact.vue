@@ -38,19 +38,23 @@
   </div>
 </template>
 
-<script setup>
-import {useApiUri} from "../composables/useApiUri";
+<script setup lang="ts">
+import {useApiUri} from "~/composables/useApiUri";
 
 const name = ref("")
 const email = ref("")
 const subject = ref("")
 const message = ref("")
-const errors = ref([])
+const errors = ref<Array<string>>([])
 const sent = ref(false)
 
 async function send() {
   const apiUri = useApiUri()
-  const response = await $fetch( 'contact/api', {
+  interface ResponseType {
+      sent: boolean,
+      errors: Array<string>
+  }
+  const response = await $fetch<ResponseType>( 'contact/api', {
     baseURL: apiUri,
     method: 'POST',
     body: {
