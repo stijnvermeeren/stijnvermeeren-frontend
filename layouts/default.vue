@@ -45,8 +45,12 @@
     line-height: 1.5;
   }
 
-  p, ul, blockquote {
+  p, ul, blockquote, .v-alert {
     margin-bottom: 1rem;
+  }
+
+  .v-alert ul {
+      margin-bottom: 0;
   }
 
   ul.list-unstyled {

@@ -1,18 +1,18 @@
 <template>
   <h2 class="h2">Contact me</h2>
 
-  <div v-if="sent" class="alert alert-success">
+  <v-alert v-if="sent" type="success" variant="tonal">
     Message sent. Thanks!
-  </div>
+  </v-alert>
   <div v-else>
     <p>I always appreciate receiving a message :). If you include your own email address, then I will be able to get in touch with you.</p>
 
     <div>
-      <div v-if="errors.length" class="alert alert-warning">
+      <v-alert v-if="errors.length" type="warning" variant="tonal">
         <ul>
           <li v-for="error in errors">{{ error }}</li>
         </ul>
-      </div>
+      </v-alert>
       <div class="d-none">
         Leave this field empty: <input v-model="subject" type="text" name="subject" />
       </div>
