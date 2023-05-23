@@ -341,26 +341,4 @@
     margin-right: 3em;
     font-size: 90%;
   }
-
-  p.naar_archief_top {
-    float:right;
-  }
-  p.naar_archief_bottom {
-    margin-left: 2em;
-  }
-
-  #sphere {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  div#imageviewer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-  }
 </style>

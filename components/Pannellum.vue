@@ -11,7 +11,6 @@ interface CustomWindow extends Window {
 }
 declare const window: CustomWindow;
 
-
 const {image} = defineProps<{
   image: string
 }>()
@@ -24,3 +23,10 @@ onMounted(() => {
   });
 });
 </script>
+
+<style scoped>
+#sphere {
+  width: 100%;
+  height: 100%;
+}
+</style>
