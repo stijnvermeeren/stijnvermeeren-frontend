@@ -10,6 +10,7 @@
 import {ImageViewer} from "iv-viewer";
 import 'iv-viewer/dist/iv-viewer.css';
 
+// Note: not reactive
 const {image} = defineProps<{
   image: string
 }>()

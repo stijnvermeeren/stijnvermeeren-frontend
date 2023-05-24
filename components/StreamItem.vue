@@ -26,7 +26,7 @@ interface StreamItem {
     link_domain?: string
     link_image_is_large?: boolean
 }
-const {item} = defineProps<{ item: StreamItem }>()
+defineProps<{ item: StreamItem }>()
 </script>
 
 <style scoped>

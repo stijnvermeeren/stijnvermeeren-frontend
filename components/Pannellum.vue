@@ -11,9 +11,11 @@ interface CustomWindow extends Window {
 }
 declare const window: CustomWindow;
 
+// Note: not reactive
 const {image} = defineProps<{
   image: string
 }>()
+
 onMounted(() => {
   window.pannellum.viewer('sphere', {
     "type": "equirectangular",

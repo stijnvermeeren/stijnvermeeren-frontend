@@ -6,9 +6,9 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   link: string,
   title: string,
   image: string
-}>();
+}>()
 </script>

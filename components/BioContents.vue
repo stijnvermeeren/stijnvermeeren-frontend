@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-const { currentPage } = defineProps<{
+defineProps<{
   currentPage: number
 }>()
 

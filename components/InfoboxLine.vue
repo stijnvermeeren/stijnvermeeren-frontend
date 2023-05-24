@@ -10,9 +10,7 @@
 </template>
 
 <script setup lang="ts">
-const { icon } = defineProps<{
+defineProps<{
   icon: string
 }>()
-
-
 </script>
