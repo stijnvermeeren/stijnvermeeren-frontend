@@ -7,6 +7,7 @@ export default defineNuxtConfig({
         public: {
             apiUriClient: '',
             apiUriServer: '',
+            googleMapsApiKey: ''
         }
     },
     hooks: {

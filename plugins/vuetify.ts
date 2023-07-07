@@ -13,8 +13,10 @@ export default defineNuxtPlugin((nuxtApp) => {
             defaultSet: 'mdi',
             aliases,
             sets: { mdi }
-        }
+        },
+        ssr: true
     });
 
     nuxtApp.vueApp.use(vuetify);
+    nuxtApp.vueApp.provide('vuetify', vuetify)
 });
