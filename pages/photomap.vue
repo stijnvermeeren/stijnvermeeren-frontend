@@ -28,64 +28,74 @@ const loader = new Loader({
 const vuetify = inject('vuetify')
 
 onMounted(async () => {
-    const { LatLng } = await loader.importLibrary("core")
-    const { Map } = await loader.importLibrary("maps")
-    const { AdvancedMarkerElement } = await loader.importLibrary("marker") as google.maps.MarkerLibrary;
+  const { LatLng } = await loader.importLibrary("core")
+  const { Map } = await loader.importLibrary("maps")
+  const { AdvancedMarkerElement } = await loader.importLibrary("marker") as google.maps.MarkerLibrary;
 
-    const map = new Map(mapDiv.value, {
-        center: new LatLng(-34.397, 150.644),
-        zoom: 8,
-        mapId: 'DEMO_MAP_ID'
-    });
+  const map = new Map(mapDiv.value, {
+    center: new LatLng(-41.20057, -72.54264),
+    zoom: 10,
+    mapId: 'ec253a9a328912ca'
+  });
 
-    function createContent() {
-        const content = document.createElement('div');
-        const component = createApp(PhotomapCarousel, {
-            'images': ['/images/stijn/stijn.jpg', '/images/stijn/paris.jpg'],
-            'title': 'Test',
-            onClose() {
-                content.remove();
-                component.unmount();
-            },
-        }).use(vuetify);
-        component.mount(content)
+  const locations = [
+    {
+      location: new LatLng(-41.20057, -72.54264),
+      title: 'Sendero Los Pilleyos',
+      photos: [{
+        filename: 'lospilleyos.jpg',
+        date: '2023-04-07'
+      }]
+    },
+    {
+      location: new LatLng(-41.1153,-72.5184),
+      title: 'Volcán Osorno',
+      photos: [
+        {filename: 'osorno1.jpg', date: '2023-04-07'},
+        {filename: 'osorno2.jpg', date: '2023-04-07'},
+        {filename: 'osorno3.jpg', date: '2023-04-07'},
+        {filename: 'osorno4.jpg', date: '2023-04-07'},
+        {filename: 'osorno5.jpg', date: '2023-04-07'}
+      ]
+    },
+    {
+      location: new LatLng(-41.12669, -72.51906),
+      title: 'Volcán Osorno: Cráter Rojo',
+      photos: [
+        {filename: 'craterrojo1.jpg', date: '2023-04-07'},
+        {filename: 'craterrojo2.jpg', date: '2023-04-07'},
+        {filename: 'craterrojo3.jpg', date: '2023-04-07'},
+        {filename: 'craterrojo4.jpg', date: '2023-04-07'},
+        {filename: 'craterrojo5.jpg', date: '2023-04-07'},
+        {filename: 'craterrojo6.jpg', date: '2023-04-07'}
+      ]
+    },
+  ]
 
-        /* const images = ['/images/stijn/stijn.jpg', '/images/stijn/paris.jpg']
-        images.forEach(image => {
-            const itemContent = content.appendChild(document.createElement('div'));
-            const itemComponent = createApp(VCarouselItem, {
-                src: image,
-                cover: true,
-                onClose() {
-                    itemContent.remove();
-                    itemComponent.unmount();
-                },
-            }).use(vuetify);
-            itemComponent.mount(itemContent)
-        }) */
+  function createContent(title, photos) {
+      const content = document.createElement('div');
+      const component = createApp(PhotomapCarousel, {
+          'images': photos.map(photo => photo.filename),
+          'title': title,
+          onClose() {
+              content.remove();
+              component.unmount();
+          },
+      }).use(vuetify);
+      component.mount(content)
 
-        return content
-    }
+      return content
+  }
 
-    const markers = [
-        new AdvancedMarkerElement({
-          content: createContent(),
-          position: new LatLng(-34.397, 150.624),
-          map: map
-       }),
-        new AdvancedMarkerElement({
-            content: createContent(),
-            position: new LatLng(-34.396, 150.644),
-            map: map
-        }),
-        new AdvancedMarkerElement({
-            content: createContent(),
-            position: new LatLng(-34.397, 150.264),
-            map: map
-        })
-    ];
+  const markers = locations.map(({location, title, photos}) => {
+    return new AdvancedMarkerElement({
+      content: createContent(title, photos),
+      position: location,
+      map: map
+    })
+  })
 
-    const markerCluster = new MarkerClusterer({ map, markers });
+  const markerCluster = new MarkerClusterer({ map, markers });
 })
 </script>
 
