@@ -1,19 +1,24 @@
 <template>
-  <div class="asset-map-image-marker">
+  <div class="asset-map-image-marker" @click="activeValue = cycleValue">
     <div class="image">
-      <v-carousel :height="120" cycle :interval="4000" hide-delimiters :show-arrows="images.length > 1">
-        <template #prev="{ props }">
-          <v-btn :icon="mdiChevronLeft" size="small" density="compact" variant="tonal" color="white" @click="props.onClick" @dblclick.stop />
-        </template>
-        <template #next="{ props }">
-          <v-btn :icon="mdiChevronRight" size="small" density="compact" variant="tonal" color="white" @click="props.onClick" @dblclick.stop />
-        </template>
+      <v-carousel v-model="cycleValue" :height="120" cycle :interval="4000" hide-delimiters :show-arrows="false">
         <v-carousel-item v-for="image in images" :src='`https://s3.eu-central-1.amazonaws.com/photomap.stijnvermeeren.be/${image}`' cover />
       </v-carousel>
       <div class="title">
         {{ title }}
       </div>
     </div>
+    <v-overlay activator="parent">
+      <v-carousel hide-delimiters :show-arrows="images.length > 1" v-model="activeValue">
+        <template #prev="{ props }">
+          <v-btn :icon="mdiChevronLeft" density="compact" variant="tonal" color="white" @click.stop="props.onClick" @dblclick.stop />
+        </template>
+        <template #next="{ props }">
+          <v-btn :icon="mdiChevronRight" density="compact" variant="tonal" color="white" @click.stop="props.onClick" @dblclick.stop />
+        </template>
+        <v-carousel-item v-for="image in images" :src='`https://s3.eu-central-1.amazonaws.com/photomap.stijnvermeeren.be/${image}`' cover />
+      </v-carousel>
+    </v-overlay>
   </div>
 </template>
 
@@ -24,15 +29,12 @@ defineProps({
     images: Array<String>,
     title: String
 })
+
+const cycleValue = ref()
+const activeValue = ref()
 </script>
 
 <style scoped>
-
-.v-btn {
-  margin-bottom: 5px;
-  align-self: flex-end;
-}
-
 .v-btn.v-btn--variant-tonal :deep(.v-btn__underlay) {
   opacity: 0.4;
 }
@@ -42,16 +44,24 @@ div.title {
   padding: 2px 5px;
 }
 
+div.image :deep(img) {
+  border-radius: 5px;
+}
+
 /* Outside border */
 .asset-map-image-marker {
-  background-color: lightblue;
-  border-radius: 5px;
+    pointer-events: auto;
+    background-color: lightblue;
+    border-radius: 5px;
+    cursor: pointer !important;
+    width: 160px;
+    transform: translate(0, -10px);
+    padding: 2px;
+    position: relative;
+}
+
+:deep(.v-window-item.v-carousel-item) {
   cursor: pointer !important;
-  width: 160px;
-  margin-top: -10px;
-  transform: translate(-50%, -100%);
-  padding: 2px;
-  position: absolute;
 }
 
 /* Arrow on bottom of container */
@@ -65,13 +75,5 @@ div.title {
   left: 70px;
   position: absolute;
   width: 0;
-}
-
-/* Inner image container */
-.asset-map-image-marker div.image {
-  border-radius: 5px;
-  height: 100%;
-  width: 100%;
-  margin: 0;
 }
 </style>

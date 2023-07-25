@@ -5,9 +5,8 @@
 
 <script setup lang="ts">
 import { Loader } from "@googlemaps/js-api-loader"
-import { MarkerClusterer } from "@googlemaps/markerclusterer";
+import { MarkerClusterer, SuperClusterAlgorithm } from "@googlemaps/markerclusterer";
 import { createApp } from 'vue';
-import {createVuetify} from "vuetify";
 import PhotomapCarousel from "~/components/PhotomapCarousel.vue";
 
 useHead({
@@ -95,7 +94,8 @@ onMounted(async () => {
     })
   })
 
-  const markerCluster = new MarkerClusterer({ map, markers });
+  const clusterAlgorithm = new SuperClusterAlgorithm({ radius: 160})
+  const markerCluster = new MarkerClusterer({ map, markers, algorithm: clusterAlgorithm });
 })
 </script>
 
