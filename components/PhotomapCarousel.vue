@@ -1,5 +1,5 @@
 <template>
-  <div class="asset-map-image-marker" @click="activeValue = cycleValue">
+  <div class="asset-map-image-marker" @click="activeValue = cycleValue" v-if="images">
     <div class="image">
       <v-carousel v-model="cycleValue" :height="120" cycle :interval="4000" hide-delimiters :show-arrows="false">
         <v-carousel-item v-for="image in images" :src='`https://s3.eu-central-1.amazonaws.com/photomap.stijnvermeeren.be/${image}`' cover />

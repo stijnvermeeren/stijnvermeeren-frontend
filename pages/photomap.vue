@@ -8,6 +8,7 @@ import { Loader } from "@googlemaps/js-api-loader"
 import { MarkerClusterer, SuperClusterAlgorithm } from "@googlemaps/markerclusterer";
 import { createApp } from 'vue';
 import PhotomapCarousel from "~/components/PhotomapCarousel.vue";
+import { VuetifyInjectionKey } from "~/plugins/vuetify"
 
 useHead({
   title: 'Photomap'
@@ -24,14 +25,14 @@ const loader = new Loader({
     version: "weekly"
 });
 
-const vuetify = inject('vuetify')
+const vuetify = inject(VuetifyInjectionKey)
 
 onMounted(async () => {
   const { LatLng } = await loader.importLibrary("core")
   const { Map } = await loader.importLibrary("maps")
   const { AdvancedMarkerElement } = await loader.importLibrary("marker") as google.maps.MarkerLibrary;
 
-  const map = new Map(mapDiv.value, {
+  const map = new Map(mapDiv.value!, {
     center: new LatLng(-41.20057, -72.54264),
     zoom: 10,
     mapId: 'ec253a9a328912ca'
@@ -71,7 +72,7 @@ onMounted(async () => {
     },
   ]
 
-  function createContent(title, photos) {
+  function createContent(title , photos) {
       const content = document.createElement('div');
       const component = createApp(PhotomapCarousel, {
           'images': photos.map(photo => photo.filename),
