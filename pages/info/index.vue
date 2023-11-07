@@ -8,7 +8,7 @@
 
   <h3>Data Scientist and Software Engineer</h3>
 
-  <p>From 2013 until 2022, I worked as <em>Head of AI</em> for <nuxt-link to="https://www.starmind.ai/">Starmind</nuxt-link> in Zürich, Switzerland. My work involved data science (in particular natural language processing, recommender systems, full text search) and software engineering in Scala and Python.</p>
+  <p>Since July 2023, I work as Project Lead Data Science at the <a href="https://www.swisstopo.admin.ch/">Federal Office of Topography swisstopo</a> in Bern. Before that, from 2013 until 2022, I was <em>Head of AI</em> for <nuxt-link to="https://www.starmind.ai/">Starmind</nuxt-link> in Zürich, Switzerland. My work involved data science (in particular natural language processing, recommender systems, full text search) and software engineering in Scala and Python.</p>
 
   <p>I am currently on a sabbatical until April 2023, travelling Europe and Latin America.</p>
 

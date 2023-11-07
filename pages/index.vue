@@ -19,7 +19,7 @@
             </v-col>
           </v-row>
           <infobox-line icon="switzerland.png">
-            <stijn-age /> year old Belgian living in Zurich, Switzerland.
+            <stijn-age /> year old Belgian living in Spiez, Switzerland.
             <v-btn to="/contact" size="small" rounded="3" class="mx-2">
               <v-img src="/images/icons/email.png" width="18" class="mr-2" /> Contact
             </v-btn>
@@ -27,17 +27,17 @@
               More about me
             </v-btn>
           </infobox-line>
-          <infobox-line icon="education.png">
-            PhD in <nuxt-link to="/mathematics">Mathematics</nuxt-link> with degrees from Leeds, Cambridge and Leuven.
-          </infobox-line>
           <infobox-line icon="workplace.png">
-            9 years of professional experience as data science team lead.
+            Project Lead Data Science at <a href="https://www.swisstopo.admin.ch/">swisstopo</a> since July 2023.
             <v-btn href="/files/cv/CV-Stijn_Vermeeren.pdf" size="small" rounded="3" class="mx-2">
               <v-img src="/images/icons/cv.png" width="18" class="mr-2" /> my CV
             </v-btn>
             <v-btn href="http://ch.linkedin.com/in/stijnvermeeren/" size="small" rounded="3" class="mx-2">
               <v-img src="/images/socialmedia/linkedin.png" width="18" class="mr-2" /> LinkedIn
             </v-btn>
+          </infobox-line>
+          <infobox-line icon="education.png">
+            PhD in <nuxt-link to="/mathematics">Mathematics</nuxt-link> with degrees from Leeds, Cambridge and Leuven.
           </infobox-line>
           <infobox-line icon="projects.png">
             Notable projects:
@@ -60,7 +60,7 @@
             </v-col>
           </v-row>
           <infobox-line icon="switzerland.png">
-            <stijn-age /> jaar oude Vlaming die in Zürich, Zwitserland woont.
+            <stijn-age /> jaar oude Vlaming die in Spiez, Zwitserland woont.
             <v-btn to="/contact" size="small" rounded="3" class="mx-2">
               <v-img src="/images/icons/email.png" width="18" class="mr-2" /> Contacteer mij
             </v-btn>
@@ -68,17 +68,17 @@
               Meer over mij
             </v-btn>
           </infobox-line>
-          <infobox-line icon="education.png">
-            Doctor in de <nuxt-link to="/wiskunde">wiskunde</nuxt-link> met diplomas van de universiteiten van Leeds, Cambridge en Leuven.
-          </infobox-line>
           <infobox-line icon="workplace.png">
-            9 jaren professionele ervaring als teamleider data science.
+            Projectleider Data Science bij <a href="https://www.swisstopo.admin.ch/">swisstopo</a> sinds juli 2023.
             <v-btn href="/files/cv/CV-Stijn_Vermeeren.pdf" size="small" rounded="3" class="mx-2">
               <v-img src="/images/icons/cv.png" width="18" class="mr-2" /> mijn CV (Engels)
             </v-btn>
             <v-btn href="http://ch.linkedin.com/in/stijnvermeeren/" size="small" rounded="3" class="mx-2">
               <v-img src="/images/socialmedia/linkedin.png" width="18" class="mr-2" /> LinkedIn
             </v-btn>
+          </infobox-line>
+          <infobox-line icon="education.png">
+            Doctor in de <nuxt-link to="/wiskunde">wiskunde</nuxt-link> met diplomas van de universiteiten van Leeds, Cambridge en Leuven.
           </infobox-line>
           <infobox-line icon="projects.png">
             Belangrijke projecten:

@@ -8,7 +8,7 @@
 
   <h3>Data scientist en softwareontwikkelaar</h3>
 
-  <p>Van 2013 tot 2022 werkte ik als <em>Head of AI</em> voor <nuxt-link to="https://www.starmind.ai/">Starmind</nuxt-link> in Zürich.</p>
+  <p>Sinds juli 2023 werk ik als Projektleider Data Science bij <a href="https://www.swisstopo.admin.ch/">swisstopo</a> in Bern. Van 2013 tot 2022 werkte ik als <em>Head of AI</em> voor <nuxt-link to="https://www.starmind.ai/">Starmind</nuxt-link> in Zürich.</p>
 
   <h3>Wiskundige</h3>
 
