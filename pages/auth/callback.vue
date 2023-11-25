@@ -1,0 +1,3 @@
+<template lang="pug">
+p Je wordt aangemeld...
+</template>

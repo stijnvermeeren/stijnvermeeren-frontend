@@ -7,6 +7,9 @@ export default defineNuxtConfig({
         public: {
             apiUriClient: '',
             apiUriServer: '',
+            auth0Domain: '',
+            auth0ClientId: '',
+            auth0RedirectUri: '',
         }
     },
     hooks: {

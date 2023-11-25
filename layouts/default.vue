@@ -20,7 +20,10 @@
     </v-row>
     <v-row class="attribution">
       <v-col>
-        Icons from <a href="https://www.flaticon.com/">Flaticon</a>
+        <div>Icons from <a href="https://www.flaticon.com/">Flaticon</a>.</div>
+        <ClientOnly>
+          <login-status></login-status>
+        </ClientOnly>
       </v-col>
     </v-row>
   </v-container>
