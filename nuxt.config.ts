@@ -10,6 +10,7 @@ export default defineNuxtConfig({
             auth0Domain: '',
             auth0ClientId: '',
             auth0RedirectUri: '',
+            auth0Audience: '',
         }
     },
     hooks: {
