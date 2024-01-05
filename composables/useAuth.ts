@@ -1,7 +1,7 @@
 import {unref} from 'vue';
 import {useAuth0} from "@auth0/auth0-vue";
-import {UseFetchOptions} from "#app/composables/fetch";
-import {FetchContext} from "ofetch";
+import {type UseFetchOptions} from "#app/composables/fetch";
+import {type FetchContext} from "ofetch";
 
 export function useAuth() {
     const { getAccessTokenSilently } = useAuth0();

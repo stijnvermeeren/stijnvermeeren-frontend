@@ -25,6 +25,7 @@ onMounted(() => {
 });
 
 function zoomIn() {
+  // @ts-ignore
   const zoomValue = viewer?._state?.zoomValue
   if (!!viewer && zoomValue) {
     viewer.zoom(zoomValue * 1.25)
@@ -32,10 +33,11 @@ function zoomIn() {
 }
 
 function zoomOut() {
-    const zoomValue = viewer?._state?.zoomValue
-    if (!!viewer && zoomValue) {
-        viewer.zoom(zoomValue / 1.25)
-    }
+  // @ts-ignore
+  const zoomValue = viewer?._state?.zoomValue
+  if (!!viewer && zoomValue) {
+    viewer.zoom(zoomValue / 1.25)
+  }
 }
 </script>
 

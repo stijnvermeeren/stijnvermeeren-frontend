@@ -10,6 +10,7 @@
             :items="countries"
             item-title="name"
             item-value="code"
+            :custom-filter="customAutocompleteFilter"
             clearable
             persistent-clear
             density="compact"
@@ -43,6 +44,15 @@ interface Album {
 }
 const { data: albums }: { data: Ref<Array<Album>> } = await useApiFetch('/foto/api')
 
+function customAutocompleteFilter(itemTitle: string, queryText: string, item: {raw: {name: string, aliases?: string}}) {
+  let haystack = item.raw.name.toLowerCase()
+  if (item.raw.aliases) {
+    haystack += item.raw.aliases.toLowerCase()
+  }
+
+  return haystack.indexOf(queryText.toLowerCase()) > -1
+}
+
 const countries = [
     { code: 'ar', name: 'Argentinië' },
     { code: 'be', name: 'België' },
@@ -75,23 +85,41 @@ const countries = [
     { code: 'es', name: 'Spanje' },
     { code: 'cz', name: 'Tsjechië' },
     { code: 'th', name: 'Thailand' },
-    { code: 'gb', name: 'Verenigd Koninkrijk' },
+    { code: 'gb', name: 'Verenigd Koninkrijk', aliases: 'Engeland, Wales, Schotland, Noord-Ierland' },
     { code: 'us', name: 'Verenigde Staten' },
     { code: 'se', name: 'Zweden' },
     { code: 'ch', name: 'Zwitserland' },
 ]
 
-const countryFilter = ref<string | undefined>(undefined)
+const route = useRoute()
+const countryFilter = ref<string | undefined>(route.query.country ? route.query.country.toString() : undefined)
 
-const visibleAlbums = computed(() => {
-    const filterValue = countryFilter.value
-    if (filterValue) {
-        return albums.value.filter(album => album.country_codes.includes(filterValue))
-    } else {
-        return albums.value
-    }
+const router = useRouter()
+watch(countryFilter, (newValue, oldValue) => {
+  if (newValue !== oldValue) {
+    router.push({
+      query: { country: newValue }
+    })
+  }
 })
 
+watch(
+  () => route.query.country,
+  (newValue, oldValue) => {
+    if (newValue !== countryFilter.value) {
+      countryFilter.value = newValue ? newValue.toString() : undefined
+    }
+  }
+);
+
+const visibleAlbums = computed(() => {
+  const filterValue = countryFilter.value
+  if (filterValue && albums.value) {
+    return albums.value.filter(album => album.country_codes.includes(filterValue))
+  } else {
+    return albums.value || []
+  }
+})
 
 useMeta({
   title: 'Fotoalbums'
