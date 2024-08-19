@@ -30,8 +30,8 @@ const { data } = await useFetch<ResponseType>('https://swisshikes-kml-f28ddd4.s3
 const bucketUrl = "https://swisshikes-kml-f28ddd4.s3.eu-central-1.amazonaws.com/"
 
 const urlParams = computed(() => {
-  const joined = (data.value?.files ?? []).map(file => encodeURIComponent(`KML||${bucketUrl}${file}`)).join(",")
-  return `?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,${joined}&layers_visibility=false,false,false&layers_timestamp=18641231,,,,,,,,&X=178499.31&Y=668104.62&zoom=1`
+  const joined = (data.value?.files ?? []).map(file => encodeURIComponent(`KML|${bucketUrl}${file}`)).join(";")
+  return `?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.swisstlm3d-wanderwege,,0.3;${joined}&layers_visibility=false,false,false&layers_timestamp=18641231,,,,,,,,&X=178499.31&Y=668104.62&zoom=1`
 })
 
 const nth = function(d: string): string {
