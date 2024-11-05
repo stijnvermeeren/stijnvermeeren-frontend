@@ -2,8 +2,11 @@
   <h2>My hikes in Switzerland</h2>
 
   <p>An overview of my hikes (and via ferrata, fell running, mountaineering, ski tours and snow shoe tours) in Switzerland since 2013.</p>
+  <p>Short local trips (short runs, Uetliberg explorations) are excluded.</p>
 
-  <p>This visualisation is fairly complete, but excludes all trips on my "Hausberg" (the Uetliberg), since I have been there way too often.</p>
+  <v-alert title="Warning / disclaimer" type="warning" density="compact" variant="outlined">
+    These tracks are provided without any warranty about their accuracy, correctness or level of difficulty. Some routes might currently be subject to temporary or permanent trail closures, involve exposure to alpine risks (avalanches, rock falls, crevasses...) and/or require specialist mountaineering skills and equipment. Never follow a GPS track without proper planning, taking into account your own skills, experience and gear, the current conditions, the weather forecast, etc. Always consult online resources such as <a href="https://www.sac-cas.ch/de/huetten-und-touren/sac-tourenportal/">the SAC Tourenportal</a>, <a href="https://www.gipfelbuch.ch/">Gipfelbuch</a>, <a href="https://www.hikr.org/">Hikr</a>, <a href="https://map.geo.admin.ch/">map.geo.admin.ch</a>, <a href="https://map.wanderland.ch/">SchweizMobil</a>, <a href="https://whiterisk.ch/">WhiteRisk</a> and <a href="https://www.skitourenguru.ch/">Skitourenguru</a>, and contact local tourist offices or mountain huts where applicable.
+  </v-alert>
 
   <p v-if="dateString">Latest hike included on the map: {{dateString}}.</p>
 
