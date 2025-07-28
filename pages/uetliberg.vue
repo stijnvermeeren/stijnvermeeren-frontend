@@ -71,9 +71,9 @@
     </li>
   </ul>
 
-  <p><nuxt-link to="https://map.geo.admin.ch/?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fuetliberg%2Ftrampelpfade2.kml,KML%7C%7Chttps:%2F%2Fstijnvermeeren.be%2Ffiles%2Fuetliberg%2Futo869.kml&layers_visibility=false,false,false,true,true,true&layers_timestamp=18641231,,,,,&zoom=6&E=2680271.70&N=1244290.14">View on map.geo.admin.ch</nuxt-link> for more map options.</p>
+  <p><nuxt-link to="https://map.geo.admin.ch/#/map?lang=en&center=2680271.7,1244290.14&z=6&topic=ech&layers=ch.swisstopo.zeitreihen@year=1864,f;ch.bfs.gebaeude_wohnungs_register,f;ch.bav.haltestellen-oev,f;ch.swisstopo.swisstlm3d-wanderwege;KML%7Chttp://stijnvermeeren.be/files/uetliberg/trampelpfade2.kml;KML%7Chttps://stijnvermeeren.be/files/uetliberg/uto869.kml&bgLayer=ch.swisstopo.pixelkarte-farbe">View on map.geo.admin.ch</nuxt-link> for more map options. Don't forget to try out the 3D mode!</p>
 
-  <iframe src="https://map.geo.admin.ch/embed.html?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttp:%2F%2Fstijnvermeeren.be%2Ffiles%2Fuetliberg%2Ftrampelpfade2.kml,KML%7C%7Chttps:%2F%2Fstijnvermeeren.be%2Ffiles%2Fuetliberg%2Futo869.kml&layers_visibility=false,false,false,true,true&layers_timestamp=18641231,,,,&X=244290.14&Y=680271.70&zoom=6" width="100%" height="600" frameborder='0' style="border:0"></iframe>
+  <iframe src="https://map.geo.admin.ch/#/embed?lang=en&center=2680271.7,1244290.14&z=6&topic=ech&layers=ch.swisstopo.zeitreihen@year=1864,f;ch.bfs.gebaeude_wohnungs_register,f;ch.bav.haltestellen-oev,f;ch.swisstopo.swisstlm3d-wanderwege;KML%7Chttp://stijnvermeeren.be/files/uetliberg/trampelpfade2.kml;KML%7Chttps://stijnvermeeren.be/files/uetliberg/uto869.kml&bgLayer=ch.swisstopo.pixelkarte-farbe" width="100%" height="600" style="border:0"></iframe>
 </template>
 
 <script setup lang="ts">
