@@ -10,9 +10,9 @@
 
   <p v-if="dateString">Latest hike included on the map: {{dateString}}.</p>
 
-  <p><nuxt-link :to="`https://map.geo.admin.ch/${urlParams}`">View on map.geo.admin.ch</nuxt-link> for more map options.</p>
+  <p><nuxt-link :to="`https://map.geo.admin.ch/#/map${urlParams}`">View on map.geo.admin.ch</nuxt-link> for more map options.</p>
 
-  <iframe :src="`https://map.geo.admin.ch/embed.html${urlParams}`" width="100%" height="600" frameborder='0' style="border:0"></iframe>
+  <iframe :src="`https://map.geo.admin.ch/#/embed${urlParams}`" width="100%" height="600" frameborder='0' style="border:0"></iframe>
 </template>
 
 <script setup lang="ts">
@@ -33,8 +33,10 @@ const { data } = await useFetch<ResponseType>('https://swisshikes-kml-f28ddd4.s3
 const bucketUrl = "https://swisshikes-kml-f28ddd4.s3.eu-central-1.amazonaws.com/"
 
 const urlParams = computed(() => {
-  const joined = (data.value?.files ?? []).map(file => encodeURIComponent(`KML|${bucketUrl}${file}`)).join(";")
-  return `?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.swisstlm3d-wanderwege,,0.3;${joined}&layers_visibility=false,false,false&layers_timestamp=18641231,,,,,,,,&X=178499.31&Y=668104.62&zoom=1`
+  const joined = (data.value?.files ?? [])
+      .map(file => encodeURIComponent(`KML|${bucketUrl}${file}`) + ",,0.75")
+      .join(";")
+  return `?topic=ech&lang=en&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.swisstlm3d-wanderwege,,0.3;${joined}`
 })
 
 const nth = function(d: string): string {
