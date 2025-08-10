@@ -44,13 +44,13 @@ interface Album {
 }
 const { data: albums }: { data: Ref<Array<Album>> } = await useApiFetch('/foto/api')
 
-function customAutocompleteFilter(itemTitle: string, queryText: string, item: {raw: {name: string, aliases?: string}}) {
+function customAutocompleteFilter(itemTitle: string, queryText: string, item?: {raw: {name: string, aliases?: string}}) {
   const query = queryText.toLowerCase()
   const titleMatch = itemTitle.toLowerCase().indexOf(query)
   if (titleMatch > -1) {
     return titleMatch
   } else {
-    if (item.raw.aliases) {
+    if (!!item && item.raw.aliases) {
       return item.raw.aliases.toLowerCase().indexOf(query) > -1
     } else {
       return false
