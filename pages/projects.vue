@@ -6,7 +6,9 @@
       <v-col class="v-col-12 v-col-md-4">
         <v-card rounded="3" flat>
           <v-card-item>
-            <v-img class="mx-auto" src="/images/projects/uetliberg.png" width="280" height="180" cover />
+            <nuxt-link to="/uetliberg">
+              <v-img class="mx-auto" src="/images/projects/uetliberg.png" width="280" height="180" cover />
+            </nuxt-link>
             <v-card-title class="text-center">
               <nuxt-link to="/uetliberg">Trampelpfade am Uetliberg</nuxt-link></v-card-title>
             <v-card-text>An interactive map of the official and unofficial trails ("Trampelpfade") on the Uetliberg (the 870m tall hill rising above Zürich).</v-card-text>
@@ -16,7 +18,9 @@
       <v-col class="v-col-12 v-col-md-4">
         <v-card rounded="3" flat>
           <v-card-item>
-            <v-img class="mx-auto" src="/images/projects/swisshikes.png" width="280" height="180" cover />
+            <nuxt-link to="/swisshikes">
+              <v-img class="mx-auto" src="/images/projects/swisshikes.png" width="280" height="180" cover />
+            </nuxt-link>
             <v-card-title class="text-center">
               <nuxt-link to="/swisshikes">My hikes in Switzerland</nuxt-link></v-card-title>
             <v-card-text>All my hikes (and via ferrata, fell running, mountaineering, ski tours and snow shoe tours) in Switzerland since 2013 on a single interactive map.</v-card-text>
@@ -26,7 +30,9 @@
       <v-col class="v-col-12 v-col-md-4">
         <v-card rounded="3" flat>
           <v-card-item>
-            <v-img class="mx-auto" src="/images/projects/tijdloze.png" width="280" height="180" cover />
+            <nuxt-link href="https://tijdloze.rocks">
+              <v-img class="mx-auto" src="/images/projects/tijdloze.png" width="280" height="180" cover />
+            </nuxt-link>
             <v-card-title class="text-center">
               <nuxt-link href="https://tijdloze.rocks">tijdloze.rocks</nuxt-link>
             </v-card-title>
@@ -39,7 +45,9 @@
       <v-col class="v-col-12 v-col-md-4">
         <v-card rounded="3" flat>
           <v-card-item>
-            <v-img class="mx-auto" src="/images/projects/concept.png" width="280" height="180" cover />
+            <nuxt-link href="https://concept.stijnvermeeren.be">
+              <v-img class="mx-auto" src="/images/projects/concept.png" width="280" height="180" cover />
+            </nuxt-link>
             <v-card-title class="text-center">
               <nuxt-link href="https://concept.stijnvermeeren.be">Concept</nuxt-link>
             </v-card-title>
@@ -52,9 +60,11 @@
       <v-col class="v-col-12 v-col-md-4">
         <v-card rounded="3" flat>
           <v-card-item>
-            <v-img class="mx-auto" src="/images/projects/mathematics.png" width="280" height="180" cover />
+            <nuxt-link to="/mathematics">
+              <v-img class="mx-auto" src="/images/projects/mathematics.png" width="280" height="180" cover />
+            </nuxt-link>
             <v-card-title class="text-center">
-              <nuxt-link to="mathematics">Mathematics</nuxt-link>
+              <nuxt-link to="/mathematics">Mathematics</nuxt-link>
             </v-card-title>
             <v-card-text>
               In 2013, I obtained a PhD in Mathematical Logic from the University of Leeds. My full thesis was titled "<a href="/files/mathematics/Vermeeren_S_Mathematics_PhD_2013.pdf">Notions and applications of algorithmic randomness</a>" (pdf, 801 kB).<br />

@@ -44,11 +44,11 @@
     </v-expansion-panel>
   </v-expansion-panels>
 
-  <p class="mt-5"><nuxt-link :to="`https://map.geo.admin.ch/#/map?${mapGeoAdminChParams}`">{{ translations["open_1"][lang] }}</nuxt-link> {{ translations["open_2"][lang] }}</p>
+  <iframe class="mt-5" :src="`https://map.geo.admin.ch/#/embed?${mapGeoAdminChParams}`" width="100%" height="600" style="border:0"></iframe>
 
-  <iframe :src="`https://map.geo.admin.ch/#/embed?${mapGeoAdminChParams}`" width="100%" height="600" style="border:0"></iframe>
+  <p><nuxt-link :to="`https://map.geo.admin.ch/#/map?${mapGeoAdminChParams}`">{{ translations["open_1"][lang] }}</nuxt-link> {{ translations["open_2"][lang] }}</p>
 
-  <p class="mt-5">{{ translations["github"][lang] }}: <nuxt-link to="https://github.com/stijnvermeeren/trampelpfade-am-uetliberg">github.com/stijnvermeeren/trampelpfade-am-uetliberg</nuxt-link></p>
+  <p>{{ translations["github"][lang] }}: <nuxt-link to="https://github.com/stijnvermeeren/trampelpfade-am-uetliberg">github.com/stijnvermeeren/trampelpfade-am-uetliberg</nuxt-link></p>
 </template>
 
 <script setup lang="ts">
