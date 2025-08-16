@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import 'pannellum';
+import '~/components/Pannellum.vue';
 import 'pannellum/build/pannellum.css';
 
 interface CustomWindow extends Window {

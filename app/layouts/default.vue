@@ -2,7 +2,7 @@
   <v-container class="container px-3 py-0 mx-auto">
     <v-row class="header">
       <v-col class="v-col-5 v-col-sm-4 v-col-md-3 logo">
-        <nuxt-link to="/"><span></span></nuxt-link>
+        <nuxt-link to="/public"><span></span></nuxt-link>
         <div class="px-4">
           <h1>Stijn Vermeeren</h1>
         </div>
