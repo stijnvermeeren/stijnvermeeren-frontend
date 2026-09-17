@@ -32,9 +32,9 @@ interface ResponseType {
     files: Array<string>,
     latestDate: string
 }
-const { data } = await useFetch<ResponseType>('https://swisshikes-kml-f28ddd4.s3.eu-central-1.amazonaws.com/metadata.json');
+const { data } = await useFetch<ResponseType>('https://swisshikes-kml-b58d760.s3.eu-central-1.amazonaws.com/metadata.json');
 
-const bucketUrl = "https://swisshikes-kml-f28ddd4.s3.eu-central-1.amazonaws.com/"
+const bucketUrl = "https://swisshikes-kml-b58d760.s3.eu-central-1.amazonaws.com/"
 
 const urlParams = computed(() => {
   const joined = (data.value?.files ?? [])
