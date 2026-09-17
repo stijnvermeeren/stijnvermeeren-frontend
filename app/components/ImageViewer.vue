@@ -21,7 +21,7 @@ let zoom = 100;
 onMounted(() => {
   const container = document.querySelector('#imageviewer');
   viewer = new ImageViewer(container);
-  viewer.load(`https://s3.eu-central-1.amazonaws.com/fotos.stijnvermeeren.be/panorama/${image}`);
+  viewer.load(`https://s3.eu-central-1.amazonaws.com/photo-726299224968-eu-central-1-an/panorama/${image}`);
 });
 
 function zoomIn() {
